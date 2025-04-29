@@ -3,6 +3,9 @@ Sea Power的繁體中文化模組，歡迎開分支協作
 original: 放置官方原廠檔案
 Traditional Chinese: 放置翻譯文件
 
+# Non DO
+1. systemgroups.ini中美國文本校正 
+
 # TODO List
 ## T0:
 1. systemgroups 格式確認跟修正
