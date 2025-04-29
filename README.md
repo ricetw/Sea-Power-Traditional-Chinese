@@ -15,7 +15,11 @@ Traditional Chinese: 放置翻譯文件
 ## T1:
 ## T2:
 ## T3:
-1. 資料校正
+1. 資料須補全
+     1. TMV-430
+     2. Alligator
+     3. MN-53_ECM
+     4. MN-53_ESM
 
 # Issues
 1. systemgroups格式問題導致武器視窗顯示錯誤
