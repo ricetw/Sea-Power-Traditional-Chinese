@@ -30,4 +30,7 @@ Traditional Chinese: 放置翻譯文件
 1. 2025/05/02
  - 完成systemgroups.ini 中 US 的感測系統內容翻譯及補全
 
+2. 2025/05/03
+ - 完成systemgroups.ini 中的所有內容翻譯及補全
+
 
