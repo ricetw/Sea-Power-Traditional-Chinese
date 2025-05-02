@@ -23,3 +23,11 @@ Traditional Chinese: 放置翻譯文件
 
 # Issues
 1. systemgroups格式問題導致武器視窗顯示錯誤
+2. EA-6B 主動電子干擾顯示異常
+
+# Update History
+
+1. 2025/05/02
+ - 完成systemgroups.ini 中 US 的感測系統內容翻譯及補全
+
+
