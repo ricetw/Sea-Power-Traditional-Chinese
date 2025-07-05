@@ -1,0 +1,58 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		20DEC1968
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="來自："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="大西洋艦隊總司令部"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="給"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="約瑟夫·P·甘迺迪號 DD-850"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="接觸報告"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		快訊 - 絕密
+		<LineBreak/>
+		<LineBreak/>
+		1. (機密) 挪威海底監聽設施（NAVFAC Norway）於昨日 0030Z 報告，一艘疑似「洋基級」蘇聯彈道飛彈潛艦通過。
+		<LineBreak/>
+		<LineBreak/>
+		2. (絕密) 國家技術情報來源指出，蘇聯北方艦隊正準備出海，無線電流量達到平時三倍，蘇軍可能即將湧入北大西洋。目前國家指揮機構正詢問其意圖。
+		<LineBreak/>
+		<LineBreak/>
+		3. (絕密) 受限來源「紅夢」（RED DREAM）警告，該艘洋基級潛艦由一名叛變艦長指揮，意圖攻擊美國東岸。
+		<LineBreak/>
+		<LineBreak/>
+		4. (機密) 貴艦為該海域唯一美軍單位，立即向東北方「查理點（Point CHARLIE）」航行，搜尋並擊沉該艘洋基級潛艦。
+		<LineBreak/>
+		<LineBreak/>
+		5. (機密) 空中支援將由駐冰島雷克雅維克海軍航空站（NAS Reykjavik）的第 56 巡邏中隊（VP-56）提供，首批飛機將於 1035Z 前抵達上空。請回報擊沉地點，並等待後續命令。祝好運。
+		<LineBreak/>
+		<LineBreak/>絕密
+		<LineBreak/>未經原發者許可，不得解密
+	  </TextBlock>
+</Grid>

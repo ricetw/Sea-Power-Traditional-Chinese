@@ -1,0 +1,63 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		23OCT1983
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第二艦隊司令部"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="卡隆號驅逐艦（USS CARON DD-970）"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="分令01－緊急憤怒行動（Operation URGENT FURY）"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密電報 - 密級：秘密
+		<LineBreak/>
+		<LineBreak/>
+		1. (密) 狀況: 美國情報顯示，古巴與蘇聯部隊正於安地列斯群島南方的格瑞那達島上建造一座軍用機場。總統即將授權執行「緊急憤怒行動（Operation URGENT FURY）」，任務目標包括保護在格瑞那達的美國公民、建立民主政權，並根除古巴與蘇聯在當地的勢力。第120聯合特遣部隊（Joint Task Force 120）將負責執行此行動。
+		<LineBreak/>
+		<LineBreak/>
+		2. (密) 任務: 美國陸、海、空三軍將協同對該島發動攻擊，營救美國公民並殲滅敵方勢力。
+		<LineBreak/>
+		<LineBreak/>
+		3. (密) 執行: 卡隆號（USS CARON）將支援岸上部隊的艦砲火力。即刻脫離獨立號戰鬥群（INDEPENDENCE battlegroup），以最快航速向南航行。Moosbrugger 號將於10月21日會合。請於格瑞那達島外12海浬處就位，啟用 OUTBOARD 系統進行情報蒐集，待命接收進一步命令。
+		<LineBreak/>
+		<LineBreak/>
+		4. (密) 敵軍 戰鬥序列: 格瑞那達人民革命軍（PRA）可能配備蘇聯供應的裝甲車輛與 ZU-23 高射砲。岸上古巴顧問亦擁有輕型裝甲車，另有潛在證據顯示附近海域有一艘 FOXTROT 級柴電潛艦（SSK）活動。
+		<LineBreak/>
+		<LineBreak/>
+		5. (密) 友軍 戰鬥序列: 獨立號戰鬥群將於格瑞那達西北方部署，MARG 1-84 與關島號（GUAM）則部署在北方。獨立號的攻擊機隊與關島號的眼鏡蛇直升機將為岸上部隊提供空中支援。
+		<LineBreak/>
+		<LineBreak/>
+		6. (密) 備註: 本次行動旨在保障美國公民安全，並防止蘇聯於加勒比地區另建據點。祝任務順利，獵殺愉快！
+		<LineBreak/>
+		<LineBreak/>
+		密級：秘密
+		<LineBreak/>
+		未經收件人授權，不得解密
+	  </TextBlock>
+</Grid>

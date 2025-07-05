@@ -1,0 +1,56 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">1985年5月24日</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="來自:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="大西洋艦隊司令部"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="到:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="新澤西 SAG 指揮官"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="任務命令 01 - 緊急改派（URGENT RETASKING）"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		IMMEDIATE - 機密
+		<LineBreak/>
+		<LineBreak/>
+		1. (機密) 情勢：西德地區 NATO 與華約部隊交戰持續中。NATO「重返歐陸行動（REFORGER）」補給船團持續由美東航向安特衛普與布雷斯特。蘇聯潛艦與轟炸機部隊嘗試對補給線進行攔截，迄今成效有限。5月19日，國家技術情報來源偵測到基洛夫級核動巡洋艦與現代級驅逐艦（SOVREMENNY）於摩爾曼斯克機械艙產生熱源，這些單位於22日的衛星掃描中已消失，疑似正進入大西洋。
+		<LineBreak/>
+		<LineBreak/>
+		2. (機密) 任務：NATO 海空聯軍將在 GIUK 缺口執行攔截任務，搜索並摧毀基洛夫 SAG。
+		<LineBreak/>
+		<LineBreak/>
+		3. (機密) 執行：可動用 NATO 部隊有限，將由新澤西 SAG 負責 GIUK 缺口西段防禦，德國海軍負責東段（赫布里底群島）。冰島凱夫拉維克機場起飛之 P-3 巡邏機將支援搜索。當定位敵 SAG 時，動用所有可用手段將其擊沉。
+		<LineBreak/>
+		<LineBreak/>
+		4. (機密) 敵軍部署：1 艘基洛夫級核動巡洋艦（CGN）與 1 艘現代級驅逐艦（DDG）。圖-95 轟炸機與情報拖網船（AGI）可能會為其提供目標情報。基洛夫級配備 20 枚 SS-N-19「船難（Shipwreck）」飛彈，射程達 350 海浬。
+		<LineBreak/>
+		<LineBreak/>
+		5. (機密) 備註：因任務態勢嚴峻，建議採取電磁管制（EMCON）。必須在其進入大西洋威脅我方船團前加以攔截。大西洋司令部理解本任務艱鉅，並堅信新澤西號戰鬥群能勝任此重任。祝好運與狩獵順利。
+		<LineBreak/>
+		<LineBreak/>機密
+		<LineBreak/>未經收件人授權不得解密
+	  </TextBlock>
+</Grid>
