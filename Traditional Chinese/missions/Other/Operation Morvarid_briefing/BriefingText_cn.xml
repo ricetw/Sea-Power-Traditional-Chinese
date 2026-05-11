@@ -1,0 +1,51 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		28 NOVEMBER 1980
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件人:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="伊朗伊斯蘭共和國海軍 司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件人:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第421特遣隊 指揮官"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="新任務指示 - 珍珠行動 (عملیات مروارید)"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>	1. 伊拉克部隊摧毀了我方位於阿巴丹的煉油廠，高層已下令展開報復性打擊。部隊將攻擊科爾艾邁亞（Khor al-Amaya）與米納巴克爾（Mina al-Bakr）離岸油田平台。此兩座戰略設施若遭摧毀，將重創伊拉克石油出口能力。司令部研判此舉將迫使伊拉克海軍出動，我軍可藉機殲滅其主力。
+		<LineBreak/>
+		<LineBreak/>	2. 今夜，第421特遣隊將部署陸戰隊登上油田平台安置炸藥，並由直升機撤離。特遣艦隊將於法奧（Al-Faw）與烏姆蓋斯爾（Um-Qasr）外海封鎖區域待命。喬尚號（JOSHAN）與派坎號（PAYKAN）將主力參與本次任務。
+		<LineBreak/>
+		<LineBreak/>  3. 最新情資顯示，法奧地區部署4艘P-6魚雷快艇，烏姆蓋斯爾則駐有5艘OSA或OSA II級飛彈快艇。另有一艘波蘭製POLNOCNY級兩棲艦停靠該港，可能出動試圖重新佔領油田平台。
+		<LineBreak/>
+		<LineBreak/>	4. 一架IRIAF F-14「雄貓」戰機將提供空中雷達平台支援；另有數架掛載Maverick飛彈的F-4「鬼怪」戰機將自布什爾基地起飛提供火力支援。引誘敵艦出海，再予以殲滅。祝好運。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+	  </TextBlock>
+</Grid>

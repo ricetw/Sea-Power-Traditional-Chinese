@@ -1,0 +1,53 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		1971年12月4日
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件人:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="西方海軍司令部總司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件人:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="K/P·高帕爾·拉奧指揮官，卡拉奇打擊艦隊"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="命令 - 三叉戟行動"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>1. 根據海軍總部命令，展開「三叉戟行動」，對卡拉奇地區的巴基斯坦海軍部隊發動攻擊。任務目標為摧毀所有出現在卡拉奇海域的巴基斯坦船隻，癱瘓敵軍港口運作。
+		<LineBreak/>
+		<LineBreak/>2. 你麾下的 PETYA 級巡防艦（KATCHALL 與 KILTAN）將擔任中隊指揮，利用其先進雷達搜索海面目標；OSA 級飛彈快艇（VEER、NIPAT、NIRGHAT）則將以 STYX 飛彈攻擊由 PETYA 艦隊偵獲之敵艦。
+		<LineBreak/>
+		<LineBreak/>3. 根據無線電截聽，巴基斯坦總部已命令所有中立船隻在日落至黎明期間遠離卡拉奇港 75 海浬範圍。任何夜間進入該區雷達接觸的目標皆視為敵對單位，應立即予以攻擊。
+		<LineBreak/>
+		<LineBreak/>4. 附註：卡拉奇的巴軍艦隊包括數艘英國皇家海軍退役驅逐艦，但缺乏具備反艦飛彈的遠程武裝。運輸彈藥的商船「金星挑戰者號」（M/V VENUS CHALLENGER）預計將自西貢出發，途經該海域。巴基斯坦空軍缺乏夜戰能力，預期不會對行動構成威脅。
+		<LineBreak/>
+		<LineBreak/>5. 全速向西北推進，辨識並摧毀所有敵軍目標。祝你成功。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+	  </TextBlock>
+</Grid>

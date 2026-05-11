@@ -1,0 +1,93 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		<Run Text="{Binding MissionStartTime.Year}"/>-<Run Text="{Binding MissionStartTime.Month, StringFormat={}{0:00}}"/>-<Run Text="{Binding MissionStartTime.Day, StringFormat={}{0:00}}"/>
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+    <TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" FontSize="{StaticResource Font.Size.Header}">
+		<Run Text="{Binding MissionStartTime.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTime.Minute, StringFormat={}{0:00}}"/>Z (<Run Text="{Binding MissionStartTimeLocal.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTimeLocal.Minute, StringFormat={}{0:00}}"/>L)
+	</TextBlock>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件人："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="北極海艦隊司令部"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件人："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="K-503 艦長"/>
+    <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="作戰計畫："/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="「隱秘百合」行動"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="任務命令"/>
+    <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="#0-144.142.143"/>
+    <!--
+      <Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+    -->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+      1.（機機）情勢：
+      <LineBreak/>
+      <!--
+        Due to the recent attacks by Iran on merchant shipping passing in and out of the Persian Gulf, it has been decided to organize escorted convoys to protect maritime trade.
+      -->
+      <LineBreak/>以下為北方艦隊代號「隱秘百合」行動的指令。
+      <LineBreak/>
+      <LineBreak/>你的潛艦 K-503（查理二型巡航飛彈潛艇）與 K-244（勝利者三型攻擊核潛艦）將於指定地點與伏爾霍夫號艦隊補給艦及其護航艦會合，進行海上補給作業。
+      <LineBreak/>
+      <LineBreak/>隨後你將前往指定區域潛伏，待敵方船團通過。我方研判該船團反潛防護薄弱，並包含數艘高價值目標艦（HVT）。
+      <LineBreak/>
+      <LineBreak/>預估 20 分鐘後，一批 Tu-95RT 偵察機將飛越任務區域，協助蒐集情報並提供更清晰的敵情畫面。所有資料將透過加密通訊盡速傳送給你。
+      <LineBreak/>
+      <LineBreak/>在會合點南方有一艘氣壓計號海洋級間諜船執行任務。為避免引起懷疑，「Curtain」巡邏群已調離至東側區域。必要時可利用該巡邏群作戰。
+      <LineBreak/>
+      <LineBreak/>我方已確認目前敵方潛艦尚未進入斯瓦爾巴群島以北海域。
+      <LineBreak/>
+      <LineBreak/>
+      <LineBreak/>
+      2.（機密）主要任務目標：
+      <LineBreak/>
+      <LineBreak/>攻擊穿越斯瓦爾巴以北海域的美國海軍船團。請集中火力攻擊高價值目標，如登陸艦與後勤補給艦。
+      <LineBreak/>
+      <LineBreak/>
+      <LineBreak/>
+      3.（機密）威脅評估：
+      <LineBreak/>
+      <!--
+          Intel believes only a small force of patrol craft have been sortied by Iran at this point. Your forces should be able to brush them aside with little effort.
+      -->
+      <LineBreak/>目前判斷該敵方船團可能未配置反潛護衛艦，但你仍需對所有發現的目標進行明確識別。
+      <LineBreak/>
+      <LineBreak/>預估你所在位置南方將有敵方預警機（AWACS）例行飛越。我方已掌握其行程並持續監控，暫無需過度擔心。
+      <LineBreak/>
+      <LineBreak/>預期 NATO 潛艦不會出現在斯瓦爾巴北側海域。我方掌握約一至兩艘潛艦可能出沒於你所在區域西南側。
+      <LineBreak/>
+      <LineBreak/>同時高度評估敵方船團後方可能跟隨一支小型編隊，該類艦隻可視為次要目標。
+      <LineBreak/>
+      <LineBreak/>
+      <LineBreak/>
+      <!--
+          4.  (S) Warning Yellow - Do not fire unless fired upon
+      -->
+      <!--
+        5.  (S) EMCON - Maintain radio silence until otherwise directed
+      -->
+      4.（機密）通信管制（EMCON）— 除非另有指示，保持無線電靜默。區域內之 AGI 偵蒐艦將依其獨立任務規範行動。
+      <LineBreak/>
+      <LineBreak/>
+    </TextBlock>
+</Grid>

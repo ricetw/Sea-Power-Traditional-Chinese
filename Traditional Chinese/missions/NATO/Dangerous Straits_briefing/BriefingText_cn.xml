@@ -1,0 +1,70 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		<Run Text="{Binding MissionStartTime.Year}"/>-<Run Text="{Binding MissionStartTime.Month, StringFormat={}{0:00}}"/>-<Run Text="{Binding MissionStartTime.Day, StringFormat={}{0:00}}"/>
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+    <TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" FontSize="{StaticResource Font.Size.Header}">
+		<Run Text="{Binding MissionStartTime.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTime.Minute, StringFormat={}{0:00}}"/>Z (<Run Text="{Binding MissionStartTimeLocal.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTimeLocal.Minute, StringFormat={}{0:00}}"/>L)
+	</TextBlock>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="東大西洋艦隊司令部"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="威斯康辛戰艦戰鬥群指揮官"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="行動命令"/>
+    <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="#0-144.142.143"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+      1. (密) 情勢：
+      <LineBreak/>
+      <LineBreak/>在北約與華約之間的敵對行動爆發前，紅軍預先部署了多項高價值資產，包括一支基輔級航艦戰鬥群（CVBG），試圖搶得戰場主動權。依據「前沿海上戰略」，我方必須重新取得行動優勢，透過殲滅這些關鍵的蘇聯部隊來達成。
+      <LineBreak/>
+      <LineBreak/>蘇軍已成功在博斯普魯斯海峽與愛琴海建立據點，基輔號的存在大幅強化蘇聯在該區的威脅，成為北約必須優先殲滅的目標。
+      <LineBreak/>
+      <LineBreak/>北約海軍司令部正執行一項協同打擊行動，目標是殲滅地中海的所有蘇軍資產。首要目標為擊毀基輔航空母艦戰鬥群，阻止其通過博斯普魯斯海峽。基輔號的擊沉是確保地中海制海權與後續海軍陸戰隊反攻色雷斯地區的關鍵。
+      <LineBreak/>
+	  <LineBreak/>
+      <LineBreak/>
+      2.（密）主要任務：
+      <LineBreak/>
+      <LineBreak/>在基輔號逃入博斯普魯斯海峽前將其殲滅。
+      <LineBreak/>
+      <LineBreak/>
+      <LineBreak/>
+      3.（密）威脅報告：
+      <LineBreak/>
+      <LineBreak/>基輔號目前由至少三艘大型水面艦護航。衛星情報（SATINT）確認其周邊有多組機動防空飛彈與反艦飛彈陣地。
+      <LineBreak/>
+      <LineBreak/>蘇聯海軍航空兵（SNA）之陸基兵力目前威脅評估為可忽略。然而，基輔號上搭載數量不明的Yak-38攻擊機，對我方仍構成一定程度的空中威脅。
+      <LineBreak/>
+      <LineBreak/>蘇聯海軍潛艦部隊（VMF）預期不會參與此次行動，目前未偵測到周遭有潛艦活動，整體潛艦威脅等級評估為低風險。
+      <LineBreak/>區域內有中等程度的民用船隻活動。
+      <LineBreak/>
+      <LineBreak/>
+	  <LineBreak/>
+	  4.（密）無電磁管制（EMCON）限制。
+    </TextBlock>
+</Grid>

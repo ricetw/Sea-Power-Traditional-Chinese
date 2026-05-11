@@ -1,0 +1,86 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		<Run Text="{Binding MissionStartTime.Year}"/>-<Run Text="{Binding MissionStartTime.Month, StringFormat={}{0:00}}"/>-<Run Text="{Binding MissionStartTime.Day, StringFormat={}{0:00}}"/>
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+    <TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" FontSize="{StaticResource Font.Size.Header}">
+		<Run Text="{Binding MissionStartTime.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTime.Minute, StringFormat={}{0:00}}"/>Z (<Run Text="{Binding MissionStartTimeLocal.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTimeLocal.Minute, StringFormat={}{0:00}}"/>L)
+	</TextBlock>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第五艦隊司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第150特遣艦隊司令"/>
+    <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送："/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="太平洋艦隊司令"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="任務命令"/>
+    <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="#0-144.142.143"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+      1.  (密) 戰術情勢：
+      <LineBreak/>由於伊朗最近對進出波斯灣的商船發動攻擊，已決定組織護航艦隊以保護海上貿易。
+      <LineBreak/>
+      <LineBreak/>伊朗伊斯蘭共和國威脅將封鎖霍爾木茲海峽，限制與美國及其盟友利益相關的航運，以圖在全球範圍內取得外交籌碼。
+      <LineBreak/>
+      <LineBreak/>美國意圖對抗伊朗威脅，並展示其根據國際法通行霍爾木茲海峽的能力。
+      <LineBreak/>
+      <LineBreak/>中東艦隊司令部（COMMIDEASTFOR）已著手安排油輪護航任務，通過霍爾木茲海峽前往與離開亞丁灣。TF150（第150特遣艦隊）將護送首批商船團隊前往伊拉克沿岸的米納·巴克爾（Mīnā' al-Bakr）石油碼頭。
+      <LineBreak/>
+      <LineBreak/>
+      <LineBreak/>
+      
+      2.（密）主要任務目標：
+      <LineBreak/>
+      <LineBreak/>任務目標為從亞丁灣通過霍爾木茲海峽進入波斯灣，並在途中保護受護航商船免受伊朗伊斯蘭共和國所帶來的威脅。
+      <LineBreak/>
+      <LineBreak/>
+      <LineBreak/>
+
+      3.（密）威脅評估：
+      <LineBreak/>
+	<!--
+      Intel believes only a small force of patrol craft have been sortied by Iran at this point. Your forces should be able to brush them aside with little effort.
+	-->
+      <LineBreak/>初步研判，伊朗海軍（IRIN）與革命衛隊海軍（IRGCN）將自阿巴斯港（Bandar Abbas）派遣水面部隊進入霍爾木茲海峽。其編制預期為輕型高速突擊艦艇（FAC/FIAC）為主，輔以少量較大型的巡邏艦支援。
+      <LineBreak/>
+      <LineBreak/>預估 IRIN 與 IRGCN 可獲得有限的空中支援，包含固定翼與旋翼機。也有可能少量裝備空射反艦飛彈（AShMs）。
+      <LineBreak/>
+      <LineBreak/>
+      <LineBreak/>目前不預期伊朗海軍潛艦會構成威脅。儘管有跡象顯示 IRIN 嘗試取得迷你潛艦，但推測其尚未具備部署能力。
+	  <LineBreak/>
+	<!--
+      4.  (S) Warning Yellow - Do not fire unless fired upon
+	-->
+      <LineBreak/>
+      <LineBreak/>
+	  <!--
+      5.  (S) EMCON - Maintain radio silence until otherwise directed
+	  -->
+	  
+      4.（密）電子管制（EMCON）：由於敵軍可能具備反艦飛彈能力，目前無需維持無線電靜默，可自由通訊。
+	  
+    </TextBlock>
+</Grid>
