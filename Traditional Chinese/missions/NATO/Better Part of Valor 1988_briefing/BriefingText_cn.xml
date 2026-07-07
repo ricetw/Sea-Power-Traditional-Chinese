@@ -1,0 +1,60 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		1988年4月2日
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="大西洋艦隊總司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="飛馬座號飛彈艇"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="片段命令01——緊急重分配"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		緊急
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）隨著局勢惡化，加勒比海南部發生軍事行動的可能性越來越大。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）飛馬座號不晚於020630Z時出發，經尤卡坦海峽高速前往加勒比海西部。通過海峽後，飛馬座號向第27特遣艦隊報告，接受進一步任務指示。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）警告：截獲無線電顯示古巴部隊可能正在海峽活動，並可能嘗試封鎖航道。除非戰術態勢不允許，否則請在輻射控制下航行。此區域內的古巴部隊包括2艘206M型水翼魚雷艇、2艘183R型飛彈艇和1艘1159型或1124型護衛艦。如果我方暴露位置，古巴空軍戰鬥轟炸機可能緊急升空。
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）一架來自HSL-36中隊的SH-2F將為你偵察和瞄準目標。注意：由於基韋斯特海軍航空站的魚叉飛彈庫存不足，飛馬座號出發時只能攜帶自身彈藥。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）穿越海峽，並在抵達公海後報告情況。祝你好運。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		未經收件人許可不得解密
+	  </TextBlock>
+</Grid>

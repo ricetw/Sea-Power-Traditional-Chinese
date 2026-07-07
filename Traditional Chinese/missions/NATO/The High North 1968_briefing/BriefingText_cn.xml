@@ -21,38 +21,34 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		20DEC1968
+		1968年12月20日
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="來自："/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="大西洋艦隊總司令部"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="給"/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="約瑟夫·P·甘迺迪號 DD-850"/>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="大西洋艦隊總司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="小約瑟夫·P·肯尼迪號驅逐艦"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="接觸報告"/>
 	    <!--
 	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
 	-->
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		快訊 - 絕密
+		緊急——絕密
+		<LineBreak/>
+		<LineBreak/>		1.（機密）美國海軍設施工程系統司令部駐挪威單位報告疑似蘇聯的667A型彈道飛彈核潛艦於昨日0030Z時經過。
+		<LineBreak/>
+		<LineBreak/>		2.（絕密）國家技術情報來源表明蘇聯北方艦隊正準備啟航，無線電通信量達到正常水平的三倍。蘇軍可能即將大規模進入北大西洋。國家指揮當局目前正在調查他們的意圖。
+		<LineBreak/>
+		<LineBreak/>		3.（絕密）分隔情報來源“紅色梦想”已發出警告稱偵測到的667A型彈道飛彈核潛艦已經叛變，其指揮官意圖打擊美國東海岸。
+		<LineBreak/>
+		<LineBreak/>		4.（機密）作為此區域內唯一的美國海軍部隊，你需要向東北航行至C點，之後找到667A型潛艦並將其摧毀。
+		<LineBreak/>
+		<LineBreak/>		5.（機密）雷克雅未克海軍航空站的VP-56將提供空中支援，第一架飛機最迟於1035Z時就位。擊沉敵方潛艦後報告擊沉位置並等待進一步命令。祝你好運。
 		<LineBreak/>
 		<LineBreak/>
-		1. (機密) 挪威海底監聽設施（NAVFAC Norway）於昨日 0030Z 報告，一艘疑似「洋基級」蘇聯彈道飛彈潛艦通過。
-		<LineBreak/>
-		<LineBreak/>
-		2. (絕密) 國家技術情報來源指出，蘇聯北方艦隊正準備出海，無線電流量達到平時三倍，蘇軍可能即將湧入北大西洋。目前國家指揮機構正詢問其意圖。
-		<LineBreak/>
-		<LineBreak/>
-		3. (絕密) 受限來源「紅夢」（RED DREAM）警告，該艘洋基級潛艦由一名叛變艦長指揮，意圖攻擊美國東岸。
-		<LineBreak/>
-		<LineBreak/>
-		4. (機密) 貴艦為該海域唯一美軍單位，立即向東北方「查理點（Point CHARLIE）」航行，搜尋並擊沉該艘洋基級潛艦。
-		<LineBreak/>
-		<LineBreak/>
-		5. (機密) 空中支援將由駐冰島雷克雅維克海軍航空站（NAS Reykjavik）的第 56 巡邏中隊（VP-56）提供，首批飛機將於 1035Z 前抵達上空。請回報擊沉地點，並等待後續命令。祝好運。
-		<LineBreak/>
-		<LineBreak/>絕密
-		<LineBreak/>未經原發者許可，不得解密
+		絕密
+		<LineBreak/>		未經發起人許可不得解密
 	  </TextBlock>
 </Grid>

@@ -1,0 +1,63 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		1985年6月3日
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="太平洋艦隊總司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第70特遣艦隊指揮官"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="行動計划——緊急雷霆"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		緊急——機密
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）態勢：歐洲戰事已經爆發。華沙条約組织部隊已通過富爾達缺口，雷根總統在歐洲啟動了返德者行動。商船隊正在東海岸主要港口集結，準備啟程前往增援北約。在太平洋上，一支預計在完成演習後返回彼得羅巴甫洛夫斯克的大型蘇聯特遣艦隊現已改道前往夏威夷。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）任務：第70特遣艦隊將從珍珠港向西北方向前進，在北太平洋的蘇聯軍隊進攻中途島或夏威夷之前將其消滅。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）執行：第70特遣艦隊（尼米兹號航母及D戰鬥群）將離開夏威夷水域，開始搜索蘇聯特遣艦隊。一旦發現蘇聯艦隊，立即發動飽和攻擊，消滅遭遇的所有敵方單位。情報顯示蘇軍已分為多個編隊——你必須擊沉所有蘇聯艦艇或迫使其撤退。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）敵方部隊：北方的編隊以維爾纽斯號超級航母及其艦載航空聯隊為核心。另一支獨立編隊（很可能是兩棲部隊）由明斯克號和新羅西斯克號航空巡洋艦及其攻擊航空聯隊提供支援。情報顯示，如果我方部隊暴露，勘察加半島的圖-22M預計會發動團級規模的突襲。
+		<LineBreak/>
+		<LineBreak/>
+		6.（機密）友方部隊：由於日本、沖繩和關島遭到猛烈攻擊，這些地點無法提供空中支援。中途島的P-3反潛巡邏機將協助搜尋，且奧馬哈號也已收到命令確保你的路線安全。
+		<LineBreak/>
+		<LineBreak/>
+		7.（機密）備注：如果執行得當，我們可以借此行動一举消滅蘇聯太平洋艦隊的大部分兵力。祝你好運，獵殺愉快。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		未經收件人許可不得解密
+	  </TextBlock>
+</Grid>

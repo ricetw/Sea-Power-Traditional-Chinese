@@ -1,0 +1,64 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="大西洋艦隊總司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="灰獵犬特遣大隊"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="封鎖行動"/>
+    <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="1988年5月12日"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+      1.（機密）態勢：
+      <LineBreak/>在5月9日至10日的事件之後，北約和蘇聯都在迅速動員部隊，進入戰時狀態。蘇聯正在部署潛艦艦隊，嘗試派彈道飛彈核潛艦突破封鎖進入北大西洋，威脅北約領土。美國第二艦隊下屬的灰獵犬特遣大隊收到命令封鎖GIUK缺口的東部航道，以一切手段阻擋蘇聯潛艦。搜索和攻擊分隊A已從灰獵犬特遣大隊分離，正在法羅群島和蘇格蘭之間的航道上搜索，但仍在灰獵犬特遣大隊的控制下。參謀長聯席會議主席已將交戰規則設為與所有未知的水下接觸交戰。
+      <LineBreak/><LineBreak/>
+      2.（機密）任務：
+<LineBreak/>2.1	在GIUK缺口附近區域進行反潛封鎖搜尋。
+<LineBreak/>2.2	搜尋並摧毀所有未知的水下接觸。
+<LineBreak/><LineBreak/>
+      3.（機密）執行：
+<LineBreak/>3.1	根據情況自主進行電磁輻射控制。
+<LineBreak/>3.2	灰獵犬特遣大隊在冰島和法羅群島之間巡邏。
+<LineBreak/>3.3	搜索和攻擊分隊A在法羅群島和蘇格蘭之間巡邏。
+      <LineBreak/><LineBreak/>
+      4.（機密）敵方作戰序列：
+<LineBreak/>4.1	1艘641B型潛艦
+<LineBreak/>4.2	2艘671RTM型潛艦
+<LineBreak/>4.3	1艘667BDR型潛艦
+      <LineBreak/><LineBreak/>
+      5.（機密）友方作戰序列：
+<LineBreak/>5.1	灰獵犬特遣大隊：
+<LineBreak/>5.1.1	提康德羅加級巡洋艦福吉谷號（CG-50）
+<LineBreak/>5.1.2	諾克斯級護衛艦托馬斯·C·哈特號（FF-1092）
+<LineBreak/>5.1.3	佩里級護衛艦傑克·威廉姆斯號（FFG-24）
+<LineBreak/>5.2	搜索和攻擊分隊A：
+<LineBreak/>5.2.1	斯普魯恩斯級驅逐艦約翰·羅傑斯號（DD-983）
+<LineBreak/>5.2.2	佩里級護衛艦安德伍德號（FFG-36）
+<LineBreak/>5.3	1架P-3C（圖勒航空基地）
+<LineBreak/><LineBreak/>
+      6.（機密）情報評估：
+<LineBreak/>6.1	蘇聯攻擊型潛艦將嘗試與北約部隊交戰，可信度為高。
+<LineBreak/>6.2	蘇聯轟炸機將緊急起飛以支援潛艦行動，可信度為中。
+    </TextBlock>
+</Grid>

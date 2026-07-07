@@ -15,21 +15,21 @@
 		<!-- Player unit summary -->
 		<Border Canvas.Right="10" Canvas.Bottom="10" BorderThickness="3" BorderBrush="{StaticResource NTDS.FriendColour}" Background="#90a3b6" Width="250">
 			<TextBlock Foreground="Blue" TextAlignment="Left" VerticalAlignment="Center" Margin="5">
-                <Run Text="新澤西 SAG：" TextDecorations="Underline"/><LineBreak/><LineBreak/>
-                <Run Text="新澤西號戰艦 BB-62"/><LineBreak/>
-                <Run Text="約克鎮號巡洋艦 CG-48"/>
+                <Run Text="新澤西號水面行動群" TextDecorations="Underline"/><LineBreak/><LineBreak/>
+                <Run Text="新澤西（BB-62）"/><LineBreak/>
+                <Run Text="約克城（CG-48）"/>
            </TextBlock>
-		</Border>   
+		</Border>
 
 		<!-- Map Labels -->
 		<TextBlock Foreground="Black" Text="冰島" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="875" Canvas.Top="375"/>
-		<TextBlock Foreground="Black" Text="格林蘭" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="200" Canvas.Top="50"/>
+		<TextBlock Foreground="Black" Text="格陵蘭" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="200" Canvas.Top="50"/>
 		<TextBlock Foreground="SteelBlue" Text="北大西洋" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="200" Canvas.Top="600"/>
 
 		<!-- New Jersey SAG group icon and text -->
 		<StackPanel Orientation="Vertical" Canvas.Left="250" Canvas.Top="500">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="新澤西 SAG"/>
+                <Run Text="新澤西號水面行動群"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Surface}"/>
@@ -39,7 +39,7 @@
 		<!-- P-3C group icon and text -->
 		<StackPanel Orientation="Vertical" Canvas.Left="800" Canvas.Top="475">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="P-3C VP-5 '瘋狐狸'（Mad Foxes）"/>
+                <Run Text="P-3C（VP-5“瘋狐”）"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Air}"/>
@@ -49,7 +49,7 @@
 		<!-- Kirov SAG -->
 		<StackPanel Orientation="Vertical" Canvas.Left="650" Canvas.Top="150">
 			<TextBlock Foreground="Red" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="基洛夫 SAG （？）"/>
+                <Run Text="基洛夫號水面行動群（？）"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Surface}"/>
@@ -64,13 +64,13 @@
                 <RotateTransform Angle="50"/>
             </Path.RenderTransform>
         </Path>
-		
+
 		<Path Canvas.Left="725" Canvas.Top="420" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.FriendColour}">
             <Path.RenderTransform>
                 <RotateTransform Angle="300"/>
             </Path.RenderTransform>
         </Path>
-		
+
 		<Path Canvas.Left="590" Canvas.Top="250" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.HostileColour}">
             <Path.RenderTransform>
                 <RotateTransform Angle="230"/>

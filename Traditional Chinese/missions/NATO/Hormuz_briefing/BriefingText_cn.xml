@@ -30,9 +30,9 @@
     <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第五艦隊司令"/>
     <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第150特遣艦隊司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第150特遣艦隊指揮官"/>
     <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送："/>
-    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="太平洋艦隊司令"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="太平洋艦隊總司令"/>
     <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="任務命令"/>
     <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="#0-144.142.143"/>
@@ -40,36 +40,48 @@
 	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
 	-->
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-      1.  (密) 戰術情勢：
-      <LineBreak/>由於伊朗最近對進出波斯灣的商船發動攻擊，已決定組織護航艦隊以保護海上貿易。
-      <LineBreak/>
-      <LineBreak/>伊朗伊斯蘭共和國威脅將封鎖霍爾木茲海峽，限制與美國及其盟友利益相關的航運，以圖在全球範圍內取得外交籌碼。
-      <LineBreak/>
-      <LineBreak/>美國意圖對抗伊朗威脅，並展示其根據國際法通行霍爾木茲海峽的能力。
-      <LineBreak/>
-      <LineBreak/>中東艦隊司令部（COMMIDEASTFOR）已著手安排油輪護航任務，通過霍爾木茲海峽前往與離開亞丁灣。TF150（第150特遣艦隊）將護送首批商船團隊前往伊拉克沿岸的米納·巴克爾（Mīnā' al-Bakr）石油碼頭。
+      1.（機密）戰術態勢：
       <LineBreak/>
       <LineBreak/>
-      <LineBreak/>
-      
-      2.（密）主要任務目標：
-      <LineBreak/>
-      <LineBreak/>任務目標為從亞丁灣通過霍爾木茲海峽進入波斯灣，並在途中保護受護航商船免受伊朗伊斯蘭共和國所帶來的威脅。
-      <LineBreak/>
-      <LineBreak/>
-      <LineBreak/>
+	<!--
+	  Due to the recent attacks by Iran on merchant shipping passing in and out of the Persian Gulf, it has been decided to organize escorted convoys to protect maritime trade.
+	-->
 
-      3.（密）威脅評估：
+	伊朗伊斯蘭共和國威脅要關閉霍爾木兹海峽，禁止與美國及盟友利益相關的航運，並以此獲得國際影響力。
+      <LineBreak/>
+      <LineBreak/>
+	  美國計划應對伊朗的威脅，並且展現根據國際法穿過海峽的能力。
+      <LineBreak/>
+      <LineBreak/>中東部隊司令正安排護送油船的護航隊穿過霍爾木兹海峽，往返亞丁灣。第150特遣艦隊將護送第一批商船前往伊拉克海岸的阿巴克港油庫。
+      <LineBreak/>
+	  <LineBreak/>
+      <LineBreak/>
+      2.（機密）主要目標：
+      <LineBreak/>
+      <LineBreak/>
+	<!--
+      You are to escort the three oil tankers past the Strait of Hormuz to the designated area.
+	-->
+      從亞丁灣出發，穿過霍爾木兹海峽，進入波斯灣，同時保護護航隊中的商船免受伊朗伊斯蘭共和國的威脅。
+      <LineBreak/>
+      <LineBreak/>
+      <LineBreak/>
+      3.（機密）威脅報告：
+      <LineBreak/>
       <LineBreak/>
 	<!--
       Intel believes only a small force of patrol craft have been sortied by Iran at this point. Your forces should be able to brush them aside with little effort.
 	-->
-      <LineBreak/>初步研判，伊朗海軍（IRIN）與革命衛隊海軍（IRGCN）將自阿巴斯港（Bandar Abbas）派遣水面部隊進入霍爾木茲海峽。其編制預期為輕型高速突擊艦艇（FAC/FIAC）為主，輔以少量較大型的巡邏艦支援。
+
+	根據評估，阿巴斯港的伊朗海軍和革命衛隊海軍很可能會被部署到霍爾木兹海峽，二者可能會組成聯合部隊。預計敵方將有大量的快速攻擊艇或近海快速攻擊艇，但大型巡邏艦艇的數量有限。
       <LineBreak/>
-      <LineBreak/>預估 IRIN 與 IRGCN 可獲得有限的空中支援，包含固定翼與旋翼機。也有可能少量裝備空射反艦飛彈（AShMs）。
       <LineBreak/>
+	  根據評估，伊朗海軍和革命衛隊海軍可能會得到有限的旋翼和固定翼空中支援。
+	  <LineBreak/>
+	  <LineBreak/>
+	  根據評估，敵方空中單位可能有一定數量的空射反艦飛彈。
       <LineBreak/>
-      <LineBreak/>目前不預期伊朗海軍潛艦會構成威脅。儘管有跡象顯示 IRIN 嘗試取得迷你潛艦，但推測其尚未具備部署能力。
+      <LineBreak/>預計伊朗海軍潛艦此時不會构成威脅。根據評估，伊朗海軍很可能正嘗試獲得微型潛艦，但此時不太可能進行部署。
 	  <LineBreak/>
 	<!--
       4.  (S) Warning Yellow - Do not fire unless fired upon
@@ -79,8 +91,8 @@
 	  <!--
       5.  (S) EMCON - Maintain radio silence until otherwise directed
 	  -->
-	  
-      4.（密）電子管制（EMCON）：由於敵軍可能具備反艦飛彈能力，目前無需維持無線電靜默，可自由通訊。
-	  
+
+	  4.（機密）電磁輻射控制——敵方很可能會使用反艦飛彈，因此限制使用電磁輻射設備。
+
     </TextBlock>
 </Grid>

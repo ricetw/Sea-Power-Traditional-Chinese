@@ -14,103 +14,103 @@
 
 		<!-- Map Labels -->
 		<TextBlock Foreground="SteelBlue" Text="大西洋" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="890" Canvas.Top="500"/>
-		<TextBlock Foreground="Black" Text="格瑞那達" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="530" Canvas.Top="250"/>
+		<TextBlock Foreground="Black" Text="格林納達" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="530" Canvas.Top="250"/>
 		<TextBlock Foreground="SteelBlue" Text="加勒比海" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="100" Canvas.Top="300"/>
 
 
 		<!-- USS Caron DD-970 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="350" Canvas.Top="575">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="卡隆號驅逐艦 USS Caron DD-970"/>
+                <Run Text="卡隆（DD-970）"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Surface}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- USS Moosbrugger DD-980 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="700" Canvas.Top="500">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="莫斯布魯格號驅逐艦 USS Moosbrugger DD-980"/><LineBreak/>
-                <Run Text="(獨立作戰)"/>				
+                <Run Text="穆斯布魯格（DD-980）"/><LineBreak/>
+                <Run Text="（獨立行動）"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Surface}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- AH-1T HMLA-269 'Gunrunners' -->
 		<StackPanel Orientation="Vertical" Canvas.Left="450" Canvas.Top="600">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="AH-1T 攻擊直升機中隊『Gunrunners』（HMLA-269）"/>
+                <Run Text="AH-1T（HMLA-269“軍火走私者”）"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Helicopter}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- SH-3H HS-9 'Sea Griffins' CSAR -->
 		<StackPanel Orientation="Vertical" Canvas.Left="650" Canvas.Top="400">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="SH-3H 搜救直升機中隊『Sea Griffins』（HS-9）"/>
+                <Run Text="SH-3H（HS-9“海狮鹫”）戰鬥搜救"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Helicopter}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- 2 x A-7E VA-15 'Valions' -->
 		<StackPanel Orientation="Vertical" Canvas.Left="150" Canvas.Top="200">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="VA-15 A-7E『Valions』中隊(2架)"/>
+                <Run Text="2架A-7E（VA-15“攻擊狮”）"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Air}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- Point Salines Airport -->
 		<StackPanel Orientation="Vertical" Canvas.Left="350" Canvas.Top="475">
 			<TextBlock Foreground="{StaticResource NTDS.NeutralColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="薩林斯機場 (Point Salines Airport)"/>
+                <Run Text="薩林斯角機場"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.NeutralColour}" Data="{StaticResource NTDS.Neutral.Airbase}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.NeutralColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- Governor-General's Mansion -->
 		<StackPanel Orientation="Vertical" Canvas.Left="360" Canvas.Top="375">
 			<TextBlock Foreground="{StaticResource NTDS.NeutralColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="總督官邸 (Governor-General's Mansion)"/>
+                <Run Text="總督官邸"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.NeutralColour}" Data="{StaticResource NTDS.Neutral.Airbase}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.NeutralColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- Fort Frederick (PRA) -->
 		<StackPanel Orientation="Vertical" Canvas.Left="400" Canvas.Top="420">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="佛雷德里克要塞 (Fort Frederick, PRA)"/>
+                <Run Text="弗雷德里克堡（人民革命軍）"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Installation}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- Radio Free Grenada (PRA) -->
 		<StackPanel Orientation="Vertical" Canvas.Left="375" Canvas.Top="325">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="自由格瑞那達電台 (Radio Free Grenada, PRA)"/>
+                <Run Text="自由格林納達電台（人民革命軍）"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Radar}"/>
@@ -125,7 +125,7 @@
                 <RotateTransform Angle="130"/>
             </Path.RenderTransform>
         </Path>
-		
+
 		<Path Canvas.Left="300" Canvas.Top="515" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.FriendColour}">
             <Path.RenderTransform>
                 <RotateTransform Angle="310"/>

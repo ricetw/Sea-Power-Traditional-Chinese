@@ -1,0 +1,61 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		<Run Text="1972年4月19日"/>
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第七艦隊司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第77.1.1特遣分隊指揮官"/>
+    <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送："/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="太平洋艦隊總司令"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="任務命令"/>
+    <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="#0-144.142.143"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+      立即——機密
+	  <LineBreak/>
+	  <LineBreak/>
+	  1.（機密）態勢：情報顯示北越正通過沿海公路向廣治省的前線運送大量部隊和補給。
+      <LineBreak/>
+      <LineBreak/>
+      2.（機密）任務：第77特遣艦隊執行海岸砲擊，摧毀洞海附近的地面設施。
+      <LineBreak/>
+      <LineBreak/>
+      3.（機密）執行：第77.1.1特遣分隊（包含俄克拉荷馬市號）攻擊北越海岸砲台和設施並壓制遭遇的所有目標。斯特雷特號部署在第77.1.1特遣分隊的東北方並協同防空。無輻射控制限制。此區域內的所有目標均被視為敵對，授權第77.1.1特遣分隊不受限制地對所有构成直接威脅的目標開火。
+      <LineBreak/>
+      <LineBreak/>
+      4.（機密）敵方作戰序列：洞海地區受到敵方面對空飛彈陣地和海岸砲台保護。北越海軍的岸防艦艇可能會出動攻擊我軍，但要注意：此區域是重要的漁場，必須避免平民傷亡。
+      <LineBreak/>
+      <LineBreak/>
+      5.（機密）備注：迅速進入，在敵軍向南補給前將其消滅。祝你好運，獵殺愉快。
+	  <LineBreak/>
+	  <LineBreak/>
+	  機密
+    </TextBlock>
+</Grid>

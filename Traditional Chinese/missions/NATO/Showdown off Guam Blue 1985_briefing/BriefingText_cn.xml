@@ -1,0 +1,73 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--<TextBlock Grid.Row="1" Grid.Column="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		國防部
+		<LineBreak/>
+		參謀長聯席會議消息中心
+	</TextBlock>-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		立即
+		<LineBreak/>
+		1985年6月27日0010Z時
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="夏威夷州珍珠港太平洋艦隊總司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第72特遣艦隊指揮官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送："/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		華盛頓特區參謀長聯席會議//參謀長聯席會議主席//<LineBreak/>
+		夏威夷州希卡姆空軍基地太平洋空軍總部<LineBreak/>
+		横田空軍基地美國駐日本部隊司令
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="行動命令——迅速雷霆行動"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		絕密
+		<LineBreak/>
+		<LineBreak/>
+		1.（絕密）態勢：6月18日，由基洛夫號戰列巡洋艦、明斯克號航空母艦及其護航艦艇組成的蘇聯大型水面艦隊離開了海參崴，並在宣戰前不久穿過了宫古海峽。截至6月27日，此艦隊下落不明，我們評估認為其在菲律宾海活動。各種跡象和預警信息表明此艦隊極有可能在6月28日之前對關島發動攻擊。
+		<LineBreak/>
+		<LineBreak/>
+		2.（絕密）任務：第72.1特遣大隊需要找到、攔截並消滅所有位於菲律宾海的蘇聯軍隊。
+		<LineBreak/>
+		<LineBreak/>
+		3.（絕密）執行：此命令在收到時立即生效。第72.1特遣大隊（水面行動群）立即離開阿普拉港，向西北方向航行。與安德森空軍基地協同進行偵察和海上打擊行動。安德森空軍基地的B-52機隊最近已得到升級，可攜帶魚叉飛彈執行反艦任務。
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）友方部隊：日本航空自衛隊的海上打擊部隊已全數投入防衛日本的任務，但其海上巡邏資產將從硫磺島機場出發以協助搜尋。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）敵方作戰序列：基洛夫號和明斯克號由數艘水面艦艇護航，可能還伴隨一艘傳遞瞄準數據的潛艦。明斯克號攜帶滿編艦載機聯隊，截獲的情報顯示敵軍可能已分散為多股以規避偵察。
+		<LineBreak/>
+		<LineBreak/>
+		6.（機密）交戰規則保持不變。消滅所有敵對力量。祝你好運，獵殺愉快。
+		<LineBreak/>
+		<LineBreak/>
+		絕密
+		<LineBreak/>
+		解密：由原始發布機构决定
+		</TextBlock>
+
+</Grid>

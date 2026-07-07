@@ -1,0 +1,64 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		立即
+		<LineBreak/>
+		1985年5月24日0019Z時
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="大西洋艦隊總司令"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="新澤西號水面行動群指揮官"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="抄送："/>
+	<TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		華盛頓特區參謀長聯席會議//參謀長聯席會議主席//<LineBreak/>
+		德國法伊英根美國歐洲司令部總司令<LineBreak/>
+		弗吉尼亞州諾福克美國大西洋司令部總司令<LineBreak/>
+		華盛頓特區國防情報局
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="緊急重新分配——GIUK缺口行動"/>
+	    <!--
+	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+	-->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>		1.（機密）態勢：北約和華約的部隊仍在西德交戰。北約的重返德國護航隊正按計划從美國東海岸定期前往安特衛普和布雷斯特。蘇聯潛艦和轟炸機部隊正試圖攔截護航隊，但目前為止戰果極少。5月19日，國家技術情報來源在位於摩爾曼斯克的基洛夫號核動力巡洋艦和一艘956型驅逐艦的動力裝置上偵測到热散發。它們已從5月22日的衛星飛越圖像上消失，我們怀疑它們正在進入大西洋。
+		<LineBreak/>
+		<LineBreak/>		2.（機密）任務：北約海空部隊將在GIUK缺口執行封鎖行動，搜尋並摧毀基洛夫號水面行動群。
+		<LineBreak/>
+		<LineBreak/>		3.（機密）執行：附近的北約部隊數量有限。新澤西號水面行動群將被分配至西部的GIUK缺口進行防禦，德國海軍部隊將負責赫布里底群島的東部封鎖。凱夫拉維克的P-3將協助搜索。一旦找到基洛夫號水面行動群，使用一切可用手段將其擊沉。
+		<LineBreak/>
+		<LineBreak/>		4.（機密）敵方作戰序列：1艘1144型核動力巡洋艦和1艘956型驅逐艦。圖-95RT和偽裝成拖網漁船的輔助通用情報船可能會向敵軍傳遞有關你部隊的瞄準數據。1144型核動力巡洋艦攜帶了20枚P-700花崗岩飛彈，射程可達280海里。
+		<LineBreak/>
+		<LineBreak/>		5.（機密）備注：由於交戰部隊戰鬥力不平衡，建議進行電磁輻射控制。我們必須在敵軍進入大西洋並威脅我們的護航隊之前進行攔截。大西洋艦隊總司令明白這是一項艱巨的任務，但也知道新澤西號能克服困難。祝你好運，狩獵愉快。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		解密：由原始發布機构决定
+	  </TextBlock>
+</Grid>
