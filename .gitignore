@@ -1,6 +1,9 @@
+.agents
 .vscode
+original/**/*_cn*.*
 original/**/*_de*.*
 original/**/*_fr*.*
+original/**/*_ja*.*
 original/**/*_ko*.*
 original/**/*_ru*.*
 original/**/*_es*.*
@@ -21,8 +24,6 @@ original/language_es/*
 original/language_fr/*
 original/language_ko/*
 original/language_ru/*
-original/missions/Video Tutorials/*
-original/missions/Warsaw Pact/*
 original/reference/*
 original/scenery/*
 original/systems/*
