@@ -11,147 +11,148 @@
                 <Border BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="30" Height="20" Margin="40,0,0,140" BorderBrush="{StaticResource Brush.Border.FocusAccent}"/>
             </Grid>
         </Border>
-		
+
 		<!-- Player unit summary -->
 		<Border Canvas.Left="10" Canvas.Bottom="10" BorderThickness="3" BorderBrush="{StaticResource NTDS.FriendColour}" Background="#90a3b6" Width="250">
 			<TextBlock Foreground="Blue" TextAlignment="Left" VerticalAlignment="Center" Margin="5">
-                <Run Text="第421特遣隊：" TextDecorations="Underline"/><LineBreak/><LineBreak/>
-                <Run Text="P225 喬尚號"/><LineBreak/>
-                <Run Text="P224 派坎號"/>
+                <Run Text="第 421 特遣隊：" TextDecorations="Underline"/><LineBreak/><LineBreak/>
+                <Run Text="P225 Joshan"/><LineBreak/>
+                <Run Text="P224 Paykan"/>
            </TextBlock>
 		</Border>
 
 		<!-- Map Labels -->
 		<TextBlock Foreground="SteelBlue" Text="波斯灣" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="800" Canvas.Top="350"/>
-		<TextBlock Foreground="Black" Text="伊拉克" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Canvas.Left="100" Canvas.Top="300"/>
-		<TextBlock Foreground="Black" Text="烏姆蓋斯爾" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="275" Canvas.Top="150"/>
-		<TextBlock Foreground="Black" Text="法奧" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="550" Canvas.Top="100"/>
+		<TextBlock Foreground="Black" Text="伊拉克" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Canvas.Left="100" Canvas.Top="100"/>
+		<TextBlock Foreground="Black" Text="科威特" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Canvas.Left="100" Canvas.Top="350"/>
+		<TextBlock Foreground="Black" Text="Um-Qasr" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="275" Canvas.Top="150"/>
+		<TextBlock Foreground="Black" Text="Al-Faw" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="550" Canvas.Top="100"/>
 
-		<!-- Task Force 421 -->
+		<!-- 第 421 特遣隊 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="650" Canvas.Top="300">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="第421特遣隊"/>
+                <Run Text="第 421 特遣隊"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Surface}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- F-14A 82nd TFS -->
 		<StackPanel Orientation="Vertical" Canvas.Left="850" Canvas.Top="450">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="F-14A 第82戰術戰鬥中隊"/>
+                <Run Text="F-14A 82nd TFS"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Air}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- 2 x F-4E 91st TFS -->
 		<StackPanel Orientation="Vertical" Canvas.Left="825" Canvas.Top="500">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="F-4E 第91戰術戰鬥中隊"/>
+                <Run Text="2 x F-4E 91st TFS"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Air}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Iraqi Navy Osa Force -->
+
+		<!-- 伊拉克i Navy Osa Force -->
 		<StackPanel Orientation="Vertical" Canvas.Left="475" Canvas.Top="200">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="伊拉克 Osa 艦隊"/>
+                <Run Text="伊拉克i Osa Force"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Surface}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Iraqi Navy Torpedo Boats -->
+
+		<!-- 伊拉克i Navy Torpedo Boats -->
 		<StackPanel Orientation="Vertical" Canvas.Left="650" Canvas.Top="175">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="伊拉克魚雷艇"/>
+                <Run Text="伊拉克i Torpedo Boats"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Surface}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Iraqi Navy LSM -->
+
+		<!-- 伊拉克i Navy LSM -->
 		<StackPanel Orientation="Vertical" Canvas.Left="400" Canvas.Top="120">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="伊拉克 LSM 登陸艦"/>
+                <Run Text="伊拉克i LSM"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Surface}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Iraqi Air (?) -->
+
+		<!-- 伊拉克i Air (?) -->
 		<StackPanel Orientation="Vertical" Canvas.Left="300" Canvas.Top="50">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="伊拉克空軍（？）"/>
+                <Run Text="伊拉克i Air (?)"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Air}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- Al-Faw Radar Site -->
 		<StackPanel Orientation="Vertical" Canvas.Left="550" Canvas.Top="115">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="法奧雷達站"/>
+                <Run Text=""/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Radar}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- Al-Faw AAA -->
 		<StackPanel Orientation="Vertical" Canvas.Left="525" Canvas.Top="100">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="法奧防空砲陣地"/>
+                <Run Text=""/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.AAA}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- Al-Faw AAA -->
 		<StackPanel Orientation="Vertical" Canvas.Left="575" Canvas.Top="115">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="法奧防空砲陣地"/>
+                <Run Text=""/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.AAA}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Khor al-Amaya Oil Terminal -->
+
+		<!-- Khor al-Amaya 石油碼頭 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="600" Canvas.Top="250">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="科爾艾邁亞油田平台"/>
+                <Run Text="Khor al-Amaya 石油碼頭"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Installation}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Mina al-Bakr Oil Terminal -->
+
+		<!-- Mina al-Bakr 石油碼頭 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="575" Canvas.Top="350">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="米納巴克爾油田平台"/>
+                <Run Text="Mina al-Bakr 石油碼頭"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Installation}"/>

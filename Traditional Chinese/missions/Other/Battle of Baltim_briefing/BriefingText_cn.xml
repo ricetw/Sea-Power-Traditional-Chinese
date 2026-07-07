@@ -21,15 +21,15 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		8 OCTOBER 1973
+		1973 年 10 月 8 日
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件人:"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自："/>
     <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="以色列海軍司令"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件人:"/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第 3 突擊艇中隊指揮官"/>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題:"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第 3 飛彈艇中隊司令"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨："/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="新命令 - 西奈行動"/>
 	    <!--
 	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
@@ -38,16 +38,16 @@
 		機密
 		<LineBreak/>
 		<LineBreak/>
-		1. 隨著國防軍即將對西奈發動反擊，司令部命令第 3 突擊艇中隊支援該攻勢。
+		1. 隨著以色列國防軍地面部隊即將向西奈發動反攻，司令部要求第 3 艦隊支援此次攻擊。
 		<LineBreak/>
 		<LineBreak/>
-		2. 以最快速度向西行進，前往賽德港外海與 INS MIZNAK 及 Barkai 指揮官會合。
+		2. 以最高航速向西航行，於塞得港外海與 INS MIZNAK 及 Barkai 指揮官會合。
 		<LineBreak/>
 		<LineBreak/>
-		3. 情報顯示，該區域可能有最多 4 艘搭載 Styx 飛彈的 Osa 級飛彈快艇活動。
+		3. 情報判斷該區可能有多達 4 艘配備 Styx 飛彈的奧薩級飛彈艇。
 		<LineBreak/>
 		<LineBreak/>
-		4. 一旦地面部隊的攻勢迫使埃及海軍出港，立刻定位並摧毀敵方單位。祝你們好運。
+		4. 一旦地面攻擊的壓力迫使埃及海軍單位離港，搜尋並摧毀它們。祝好運。
 		<LineBreak/>
 		<LineBreak/>
 		機密

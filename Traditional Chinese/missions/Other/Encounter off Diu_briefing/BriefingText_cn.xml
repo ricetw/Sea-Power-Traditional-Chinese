@@ -21,29 +21,33 @@
     </Grid.ColumnDefinitions>
 	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
 	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
-		4 DECEMBER 1971
+		1971 年 12 月 4 日
 	</TextBlock>
     <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
 
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件人:"/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="巴基斯坦海軍總部（卡拉奇）"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件人:"/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="艦長 AHMAD TASNIM，巴基斯坦海軍 亨戈爾號（S131）"/>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨:"/>
-    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="新命令 - 鷹隼行動（OPERATION FALCON）"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="喀拉蚩海軍總部"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="PNS HANGOR（S131）Ahmad Tasnim 指揮官"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="新命令 - 獵鷹行動"/>
 	    <!--
 	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
 	-->
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
 		機密
 		<LineBreak/>
-		<LineBreak/>	1. 本部已收到您於12月3日發送之通報，已知有印度海軍水面艦隊逼近。
 		<LineBreak/>
-		<LineBreak/>	2. 準予開火並擊毀任何遭遇之印度軍艦。
+		1. 海軍總部確認收到你於 12 月 3 日發出的電文，告知司令部印度海軍水面特遣隊正在接近。
 		<LineBreak/>
-		<LineBreak/>	3. 備註：印度西部艦隊預估兵力為4艘PETYA-III級護衛艦與2艘BLACKWOOD級護衛艦。若遭發現，Ilyushin海上巡邏機可能出動支援。
 		<LineBreak/>
-		<LineBreak/>	4. 請維持在目前巡邏區域內，如遭敵方反潛單位攻擊，可進行還擊並向西撤退。祝好運。
+		2. 你獲準攻擊並摧毀遭遇的任何印度軍艦。
+		<LineBreak/>
+		<LineBreak/>
+		3. 注意：印度西部海軍司令部兵力估計為 4 艘 PETYA-III 級護衛艦與 2 艘 BLACKWOOD 級巡防艦。若你遭發現，伊留申海上巡邏／偵察機可能出動支援。
+		<LineBreak/>
+		<LineBreak/>
+		4. 留在你的巡邏區；若遭敵方反潛單位攻擊，摧毀它們後向西撤離。祝好運。
 		<LineBreak/>
 		<LineBreak/>
 		機密

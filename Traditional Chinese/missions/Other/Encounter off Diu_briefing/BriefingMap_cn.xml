@@ -7,11 +7,11 @@
 		<!-- Small Map -->
         <Border Canvas.Right="10" Canvas.Top="10" BorderThickness="5" BorderBrush="White">
             <Grid>
-                <Image Stretch="Uniform" Source="{Binding Assets[IndiaPakistanFar]}" Width="250"/>
-                <Border BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="30" Height="20" Margin="210,0,0,110" BorderBrush="{StaticResource Brush.Border.FocusAccent}"/>
+                <Image Stretch="Uniform" Source="{Binding Assets[印度PakistanFar]}" Width="250"/>
+                <Border BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="30" Height="20" Margin="90,0,0,110" BorderBrush="{StaticResource Brush.Border.FocusAccent}"/>
             </Grid>
         </Border>
-		
+
 		<!-- Photo inset -->
         <Border Canvas.Bottom="10" Canvas.Right="10" BorderThickness="5" BorderBrush="White">
 			<Border.Effect>
@@ -30,23 +30,23 @@
 		<!-- Map Labels -->
 		<TextBlock Foreground="SteelBlue" Text="阿拉伯海" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="150" Canvas.Top="400"/>
 		<TextBlock Foreground="Black" Text="印度" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Canvas.Left="500" Canvas.Top="100"/>
-		<TextBlock Foreground="Black" Text="迪烏" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="425" Canvas.Top="200"/>
+		<TextBlock Foreground="Black" Text="Diu" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="425" Canvas.Top="200"/>
 
 		<!-- PNS Hangor S131 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="450" Canvas.Top="450">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="巴基斯坦海軍 亨戈爾號 S131"/>
+                <Run Text="PNS Hangor S131"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Submarine}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Indian Navy Patrols -->
+
+		<!-- 印度n Navy Patrols -->
 		<StackPanel Orientation="Vertical" Canvas.Left="800" Canvas.Top="400">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="印度海軍巡邏艦"/>
+                <Run Text="印度n Navy Patrols"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Surface}"/>

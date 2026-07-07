@@ -7,11 +7,11 @@
 		<!-- Small Map -->
         <Border Canvas.Right="10" Canvas.Top="10" BorderThickness="5" BorderBrush="White">
             <Grid>
-                <Image Stretch="Uniform" Source="{Binding Assets[IndiaPakistanFar]}" Width="250"/>
+                <Image Stretch="Uniform" Source="{Binding Assets[India巴基斯坦Far]}" Width="250"/>
                 <Border BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="30" Height="20" Margin="50,0,0,120" BorderBrush="{StaticResource Brush.Border.FocusAccent}"/>
             </Grid>
         </Border>
-		
+
 		<!-- Photo inset -->
         <Border Canvas.Top="10" Canvas.Left="10" BorderThickness="5" BorderBrush="White">
 			<Border.Effect>
@@ -26,50 +26,50 @@
                 <Image Stretch="Uniform" Source="{Binding Assets[photo_indian_navy_osa]}" Width="250"/>
             </Grid>
         </Border>
-		
+
 		<!-- Player unit summary -->
 		<Border Canvas.Left="10" Canvas.Bottom="10" BorderThickness="3" BorderBrush="{StaticResource NTDS.FriendColour}" Background="#90a3b6" Width="250">
 			<TextBlock Foreground="Blue" TextAlignment="Left" VerticalAlignment="Center" Margin="5">
-                <Run Text="卡拉奇打擊艦隊：" TextDecorations="Underline"/><LineBreak/><LineBreak/>
-                <Run Text="INS P79 基爾坦號"/><LineBreak/>
-                <Run Text="INS P81 卡查爾號"/><LineBreak/>
-                <Run Text="INS K82 維爾號"/><LineBreak/>
-                <Run Text="INS K86 尼帕特號"/><LineBreak/>
-                <Run Text="INS K89 尼爾加特號"/>
+                <Run Text="喀拉蚩打擊群：" TextDecorations="Underline"/><LineBreak/><LineBreak/>
+                <Run Text="INS Kiltan P79"/><LineBreak/>
+                <Run Text="INS Katchall P81"/><LineBreak/>
+                <Run Text="INS Veer K82"/><LineBreak/>
+                <Run Text="INS Nipat K86"/><LineBreak/>
+                <Run Text="INS Nirghat K89"/>
            </TextBlock>
 		</Border>
 
 		<!-- Map Labels -->
 		<TextBlock Foreground="SteelBlue" Text="阿拉伯海" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="150" Canvas.Top="400"/>
 		<TextBlock Foreground="Black" Text="巴基斯坦" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Canvas.Left="1000" Canvas.Top="300"/>
-		<TextBlock Foreground="Black" Text="卡拉奇" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="700" Canvas.Top="125"/>
+		<TextBlock Foreground="Black" Text="Karachi" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="700" Canvas.Top="125"/>
 
-		<!-- Karachi Strike Group -->
+		<!-- 喀拉蚩打擊群 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="600" Canvas.Top="550">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="卡拉奇打擊艦隊"/>
+                <Run Text="喀拉蚩打擊群"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Submarine}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Pakistan Patrols -->
+
+		<!-- 巴基斯坦 Patrols -->
 		<StackPanel Orientation="Vertical" Canvas.Left="450" Canvas.Top="250">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="巴基斯坦海軍巡邏隊"/>
+                <Run Text="巴基斯坦i Navy Patrols"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Surface}"/>
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
-		<!-- Pakistan Patrols -->
+
+		<!-- 巴基斯坦 Patrols -->
 		<StackPanel Orientation="Vertical" Canvas.Left="650" Canvas.Top="350">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="巴基斯坦海軍巡邏隊"/>
+                <Run Text="巴基斯坦i Navy Patrols"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Surface}"/>
