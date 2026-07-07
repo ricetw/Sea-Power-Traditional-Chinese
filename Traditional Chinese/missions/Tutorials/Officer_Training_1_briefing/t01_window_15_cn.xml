@@ -1,0 +1,44 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:SeapowerUI"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080"
+  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualWidth, FallbackValue=700}"
+  Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualHeight, FallbackValue=400}"
+  Padding="5,5,5,5">
+	<ScrollViewer>
+	<StackPanel Orientation="Vertical">
+		<TextBlock TextWrapping="Wrap" Margin="15" FontFamily="Roboto">
+			<TextBlock.Inlines>
+				<Run FontWeight="Bold" Text="船艦武器使用——戰術顯示符號系统" FontSize="16"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="當你選中底部欄的飛彈時，你會看到一個" FontSize="12"/><Run Text="黃色" FontSize="12" FontWeight="Bold" Foreground="#D5A876" /><Run Text="圓圈出現在戰術顯示（小地圖）上。這是此武器的最小射程，它意味著你無法射擊此圓圈內的目標。" FontSize="12"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="紅色" FontSize="12" FontWeight="Bold" Foreground="#C04A3C"/><Run Text="圓圈表示此武器的最大射程，" FontSize="12"/><Run Text="藍色" FontSize="12" FontWeight="Bold" Foreground="#00AEEF"/><Run Text="和" FontSize="12"/><Run Text="绿色" FontSize="12" FontWeight="Bold" Foreground="#7CC576"/><Run Text="圓圈分別表示雷達照明器到海平線的最高和最低偵測範圍。注意，由於飛彈飛行需要時間，它可能無法命中接近其最大有效射程的目標，具體情況取决於目標的航向、高度和速度。" FontSize="12"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="繼續並右鍵點擊戰術顯示上的目標靶船，對其發射一枚飛彈。發射開始後，通過戰術顯示點擊敵方目標船艦，觀察飛彈的命中。" FontSize="12"/>
+			</TextBlock.Inlines>
+		</TextBlock>
+
+        <StackPanel Orientation="Horizontal" Margin="0" HorizontalAlignment="Center">
+			<Button Width="100" Height="50" Margin="0,0,15,0" FontSize="16" VerticalAlignment="Bottom" Content="上一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_14_cn.xml"/>
+			<Button Width="100" Height="50" Margin="0" FontSize="16" VerticalAlignment="Bottom" Content="下一頁">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<i:InvokeCommandAction Command="{Binding ExecuteTriggerCommand}" CommandParameter="QST Harpoon"/>
+						<i:InvokeCommandAction Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_15a_cn.xml"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+		</StackPanel>
+	</StackPanel>
+	</ScrollViewer>
+</Page>

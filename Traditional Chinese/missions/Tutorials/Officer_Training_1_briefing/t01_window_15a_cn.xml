@@ -1,0 +1,37 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:SeapowerUI"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080"
+  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualWidth, FallbackValue=700}"
+  Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualHeight, FallbackValue=400}"
+  Padding="5,5,5,5">
+	<ScrollViewer>
+	<StackPanel Orientation="Vertical">
+		<TextBlock TextWrapping="Wrap" Margin="15" FontFamily="Roboto">
+			<TextBlock.Inlines>
+				<Run FontWeight="Bold" Text="船艦武器使用——RGM-84魚叉" FontSize="16"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="幹得好，指揮官。除了SM-1MR飛彈，這艘船上還有" FontSize="12"/><Run FontWeight="Bold" Text="RGM-84A魚叉" FontSize="12"/><Run Text="。這是一款超視距反艦飛彈，可以對抗船艦和浮出水面的潛艇，也是美國海軍的主力反艦武器。" FontSize="12"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="另一艘靶船已被識別。按照與發射SM-1MR相同的流程，將魚叉射向此靶船。" FontSize="12"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="注意：魚叉使用主動雷達導引頭。這意味著它會被箔條欺骗，也會被雷達回波比預期目標更大的接觸（如大型民用商船）誤導。因此，在航線密集的水域，魚叉飛彈可能使用不便，此時應當使用標準飛彈！" FontSize="12"/>
+			</TextBlock.Inlines>
+		</TextBlock>
+
+        <StackPanel Orientation="Horizontal" Margin="0" HorizontalAlignment="Center">
+			<Button Width="100" Height="50" Margin="0,0,15,0" FontSize="16" VerticalAlignment="Bottom" Content="上一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_15_cn.xml"/>
+			<Button Width="100" Height="50" Margin="0" FontSize="16" VerticalAlignment="Bottom" Content="下一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_16_cn.xml"/>
+		</StackPanel>
+	</StackPanel>
+	</ScrollViewer>
+</Page>

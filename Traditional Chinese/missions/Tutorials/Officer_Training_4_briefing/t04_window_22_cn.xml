@@ -1,0 +1,39 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080"
+  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualWidth, FallbackValue=700}"
+  Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualHeight, FallbackValue=700}"
+  Padding="5,5,5,5">
+  <Grid>
+    <ScrollViewer>
+		<StackPanel Orientation="Vertical" Margin="15">
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,15" FontFamily="Roboto" FontSize="16" FontWeight="Bold" Text="掛載——打擊"/>
+		<TextBlock TextWrapping="Wrap" Margin="0" FontFamily="Roboto" FontSize="12">
+			<TextBlock.Inlines>
+				<Run Text="打擊、遠程打擊和精確打擊通常用於地面目標（陸地設施）。"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="打擊掛載通常包含無制導炸彈和集束炸彈。精確打擊通常包含激光制導炸彈或電視制導炸彈，二者在使用時都需要滿足一定条件。"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run FontWeight="Bold" FontSize="12" Text="•激光制導炸彈："/><Run Text="需要目標的清晰視野，讓飛機用激光指示器進行引導。注意：多架飛機之間可以互相進行“伙伴激光指示”，即一架飛機使用激光指示器為另一架飛機的武器提供引導！"/>
+				<LineBreak/>
+				<Run FontWeight="Bold" FontSize="12" Text="•電視制導炸彈："/><Run Text="需要目標的清晰視野（如無云層遮擋），讓電視導引頭看到目標。這類武器通常是滑翔炸彈，因此需要從高空投掷才能最大化射程。"/>
+				
+			</TextBlock.Inlines>
+		</TextBlock>
+		<LineBreak/>
+        <StackPanel Orientation="Horizontal" Margin="0" HorizontalAlignment="Center">
+			<Button Width="100" Height="50" Margin="15" FontSize="16" VerticalAlignment="Bottom" Content="上一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_4_briefing/t04_window_21_cn.xml"/>
+			<Button Width="100" Height="50" Margin="15" FontSize="16" VerticalAlignment="Bottom" Content="下一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_4_briefing/t04_window_23_cn.xml"/>
+		</StackPanel>
+	</StackPanel>
+    </ScrollViewer>
+  </Grid>
+</Page>

@@ -1,0 +1,36 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080"
+  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualWidth, FallbackValue=700}"
+  Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualHeight, FallbackValue=700}"
+  Padding="5,5,5,5">
+  <Grid>
+    <ScrollViewer>
+		<StackPanel Orientation="Vertical" Margin="15">
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,15" FontFamily="Roboto" FontSize="16" FontWeight="Bold" Text="軍官訓練2——總結"/>
+		<TextBlock TextWrapping="Wrap" Margin="0" FontFamily="Roboto" FontSize="12">
+			<TextBlock.Inlines>
+				<Run Text="幹得好，你完成了編隊訓練！現在你已經掌握了編隊內的船艦管理。這是《海權》裡的一項關鍵技能，也會在後續的教學中發挥作用。"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="請自由地練習編隊管理。你可以嘗試再將三艘船艦組成一個編隊，假設敵方從西北方向靠近，讓此編隊為油船提供最好的保護，或者嘗試將納爾維克號部署至東方50海里外作為雷達警戒船。"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="軍官訓練的第二部分到此結束。幹得好，指揮官！"/>
+			</TextBlock.Inlines>
+		</TextBlock>
+		<LineBreak/>
+        <StackPanel Orientation="Horizontal" Margin="0" HorizontalAlignment="Center">
+			<Button Width="100" Height="50" Margin="15" FontSize="16" VerticalAlignment="Bottom" Content="上一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_2_briefing/t02_window_18_cn.xml"/>
+			<Button Width="110" Height="50" Margin="15" FontSize="16" VerticalAlignment="Bottom" Content="退出任務" Command="{Binding ExecuteTriggerCommand}" CommandParameter="Exit"/>
+		</StackPanel>
+	</StackPanel>
+    </ScrollViewer>
+  </Grid>
+</Page>

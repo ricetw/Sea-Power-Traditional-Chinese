@@ -1,0 +1,43 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:SeapowerUI"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080"
+  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualWidth, FallbackValue=700}"
+  Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualHeight, FallbackValue=400}"
+  Padding="5,5,5,5">
+	<ScrollViewer>
+	<StackPanel Orientation="Vertical">
+		<TextBlock TextWrapping="Wrap" Margin="15" FontFamily="Roboto">
+			<TextBlock.Inlines>
+				<Run FontWeight="Bold" Text="船艦武器使用——飛彈防禦" FontSize="16"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="將來，你自己也會遭到此類武器的攻擊。大多數船艦都有一些自衛手段：" FontSize="12"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run FontWeight="Bold" FontSize="12" Text="•箔條："/><Run Text="制造虚假雷達回波，引诱雷達制導的飛彈。" FontSize="12"/>
+				<LineBreak/>
+				<Run FontWeight="Bold" FontSize="12" Text="•噪聲诱饵："/><Run Text="制造虚假聲學特徵，引诱被動聲自導魚雷。" FontSize="12"/>
+				<LineBreak/>
+				<Run FontWeight="Bold" FontSize="12" Text="•近防系统："/><Run Text="擊落來襲的敵方飛彈或飛機。" FontSize="12"/>
+				<LineBreak/>
+				<Run FontWeight="Bold" FontSize="12" Text="•電子對抗措施："/><Run Text="干擾敵方飛彈，使其丢失目標。" FontSize="12"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="注意：箔條、近防系统和電子對抗措施會自動部署，噪聲诱饵需要玩家手動部署！" FontSize="12"/>
+			</TextBlock.Inlines>
+		</TextBlock>
+
+        <StackPanel Orientation="Horizontal" Margin="0" HorizontalAlignment="Center">
+			<Button Width="100" Height="50" Margin="0,0,15,0" FontSize="16" VerticalAlignment="Bottom" Content="上一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_15a_cn.xml"/>
+			<Button Width="100" Height="50" Margin="0" FontSize="16" VerticalAlignment="Bottom" Content="下一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_17_cn.xml"/>
+		</StackPanel>
+	</StackPanel>
+	</ScrollViewer>
+</Page>

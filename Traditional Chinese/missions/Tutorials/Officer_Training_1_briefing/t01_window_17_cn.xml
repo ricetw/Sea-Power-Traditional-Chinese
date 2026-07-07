@@ -1,0 +1,48 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:SeapowerUI"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080"
+  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualWidth, FallbackValue=700}"
+  Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ContentControl}}, Path=ActualHeight, FallbackValue=400}"
+  Padding="5,5,5,5">
+	<ScrollViewer>
+	<StackPanel Orientation="Vertical">
+		<TextBlock TextWrapping="Wrap" Margin="15" FontFamily="Roboto">
+			<TextBlock.Inlines>
+				<Run FontWeight="Bold" Text="船艦武器使用——武器狀態" FontSize="16"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="預設情況下，所有玩家單位開局時都處於" FontSize="12"/><Run Text="確認開火" FontSize="12" FontWeight="Bold"/><Run Text="模式。確認開火意味著此單位將在沒有玩家參與的情況下自動防禦自身及其編隊內的所有單位，但不會在沒有玩家命令的情況下主動攻擊敵方單位。" FontSize="12"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="其他兩種武器開火模式分別是限制開火和自由開火：" FontSize="12"/>
+				<LineBreak/>
+				<Run FontWeight="Bold" FontSize="12" Text="•限制開火"/><Run Text="將禁止單位對所有來襲的武器開火。" FontSize="12"/>
+				<LineBreak/>
+				<Run FontWeight="Bold" FontSize="12" Text="•自由開火"/><Run Text="將允許單位在沒有玩家參與的情況下自動攻擊所有敵方單位。" FontSize="12"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="我們通常建議將你控制下的單位設定為確認開火模式，至少對於新手是如此。" FontSize="12"/>
+			</TextBlock.Inlines>
+		</TextBlock>
+
+        <StackPanel Orientation="Horizontal" Margin="0" HorizontalAlignment="Center">
+			<Button Width="100" Height="50" Margin="0,0,15,0" FontSize="16" VerticalAlignment="Bottom" Content="上一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_16_cn.xml"/>
+			<Button Width="100" Height="50" Margin="0" FontSize="16" VerticalAlignment="Bottom" Content="下一頁">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<i:InvokeCommandAction Command="{Binding ExecuteTriggerCommand}" CommandParameter="QST Guns"/>
+						<i:InvokeCommandAction Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_18_cn.xml"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+		</StackPanel>
+	</StackPanel>
+	</ScrollViewer>
+</Page>
