@@ -27,47 +27,56 @@
     <TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" FontSize="{StaticResource Font.Size.Header}">
 		<Run Text="{Binding MissionStartTime.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTime.Minute, StringFormat={}{0:00}}"/>Z (<Run Text="{Binding MissionStartTimeLocal.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTimeLocal.Minute, StringFormat={}{0:00}}"/>L)
 	</TextBlock>
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件人："/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="蘇聯海軍總司令部"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="海軍總司令"/>
     <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="奧列爾號戰鬥群指揮官"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="維爾纽斯號特遣艦隊指揮官"/>
     <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨："/>
     <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="任務命令"/>
     <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="#0-144.142.143"/>
 	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-      1.（機密）情勢：
+      1.（機密）戰術態勢：
 	  <LineBreak/>
-    <LineBreak/>為了進入大西洋，您必須通過直布羅陀基地。
-	  <LineBreak/>
-	  <LineBreak/>預期將面對敵方海空部隊的激烈抵抗。無論代價為何，您都必須確保航母完好無損。
-	  <LineBreak/>
-	  <LineBreak/>注意目標：嚴禁造成平民傷亡。
+      <LineBreak/>
+	  為了突破封鎖，進入大西洋，你需要越過直布羅陀基地。
 	  <LineBreak/>
 	  <LineBreak/>
+	  預計會有敵方海空部隊進行猛烈抵抗。
 	  <LineBreak/>
-    2.（機密）主要任務：
-    <LineBreak/>
-    <LineBreak/>與友軍潛艦在指定區域會合
-    <LineBreak/>
-	  <LineBreak/> - 維爾紐斯號必須生還
-    <LineBreak/>
-    <LineBreak/>
 	  <LineBreak/>
-    3.（機密）次要目標：
-    <LineBreak/>
-    <LineBreak/>儘可能壓制直布羅陀基地
-    <LineBreak/>
-    <LineBreak/>
+	  不惜一切代价保護航艦。
 	  <LineBreak/>
-    4.（機密）儘量避免被敵方空中巡邏發現
-    <LineBreak/>
-    <LineBreak/>
 	  <LineBreak/>
-    5.（機密）黃色警告——僅在受到攻擊時開火。
-    <LineBreak/>
-    <LineBreak/>
+	  識別目標——我們不能接受平民傷亡。
+      <LineBreak/>
+      <LineBreak/>
 	  <LineBreak/>
-    6.（機密）電磁管制 - 保持無線電靜默，除非另有命令。
+      2.（機密）主要目標：
+      <LineBreak/>
+      <LineBreak/>
+      在指定區域與友軍潛艇會合。
+      <LineBreak/>
+	  <LineBreak/>
+      維爾纽斯號不能沉沒。
+      <LineBreak/>
+      <LineBreak/>
+	  <LineBreak/>
+      3.（機密）次要目標：
+      <LineBreak/>
+      <LineBreak/>
+      盡可能破壞直布羅陀基地。
+      <LineBreak/>
+      <LineBreak/>
+	  <LineBreak/>
+      4.（機密）盡可能長時間地避免被敵方空中巡邏隊發現。
+      <LineBreak/>
+      <LineBreak/>
+	  <LineBreak/>
+      5.（機密）黃色警告——僅在受到攻擊時開火。
+      <LineBreak/>
+      <LineBreak/>
+	  <LineBreak/>
+      6.（機密）電磁輻射控制——保持無線電靜默，除非另有指示。
     </TextBlock>
 </Grid>

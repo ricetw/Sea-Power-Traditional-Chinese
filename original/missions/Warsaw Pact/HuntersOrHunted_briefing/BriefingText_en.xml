@@ -27,32 +27,32 @@
     <TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" FontSize="{StaticResource Font.Size.Header}">
 		<Run Text="{Binding MissionStartTime.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTime.Minute, StringFormat={}{0:00}}"/>Z (<Run Text="{Binding MissionStartTimeLocal.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTimeLocal.Minute, StringFormat={}{0:00}}"/>L)
 	</TextBlock>
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件人:"/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第七作戰支隊司令 (SF)"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件人:"/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="第二海岸防衛師司令"/>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨:"/>
-    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="接觸報告 - 任務命令"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FROM:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COM 7TH OPERATIONAL SQUADRON (SF)"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COM 2ND COASTAL DEFENSE DIVISION"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CONTACT REPORT - MISSION ORDER"/>
     <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="#0-144.142.143"/>
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-    1. 作戰狀況：美軍潛艦仍不斷企圖潛入我們在巴倫支海的堡壘區域。第二海岸防衛師負責執行反潛任務，以阻止美軍進犯。今晨，我方一艘攻擊潛艦回報於奧斯特羅夫諾伊北方約150海里偵測到美方聲紋。
-    <LineBreak/>
-    <LineBreak/>
-    2. 主要任務：第二海岸防衛師安東分遣隊（ANTON）將前往最後回報接觸位置並摧毀該美軍潛艦。
-    <LineBreak/>
-    <LineBreak/>
-    3. 友軍支援：第145反潛航空兵團 Il-38 可提供空中支援。
-    <LineBreak/>
-    <LineBreak/>
-    4. 敵軍兵力：K-481 回報的聲紋符合美國 STURGEON 級攻擊潛艦特徵。
-    <LineBreak/>
-    <LineBreak/>
-    5. 武器使用：可對所有潛艦目標開火。
-    <LineBreak/>
-    <LineBreak/>
-    6. 無電磁管制限制。
-    <LineBreak/>
-    <LineBreak/>
-    6. 備註：美軍攻擊潛艦極為危險，務必嚴加警戒。同志們，祝你們好運。
+      1. TACTICAL SITUATION: American submarines continue to attempt to infiltrate our bastion in the Barents Sea. 2nd Coastal Defense Division is charged with anti-submarine action against the Americans in our territorial sea. This morning, one of our attack submarines reported American acoustic signature approximately 150nm north of Ostrovnoy.
+      <LineBreak/>
+      <LineBreak/>
+      2. PRIMARY OBJECTIVE: 2nd Coastal Division Detachment ANTON will move to last reported point of contact and destroy the American. 
+      <LineBreak/>
+      <LineBreak/>
+	  3. FRIENDLY FORCES: Ka-25 is available for air support. Due to long overwater flight required to reach you, he is only loaded with sonobuoys.
+	  <LineBreak/>
+      <LineBreak/>
+	  4. ENEMY FORCES: K-481 is reporting signature correlating to USA STURGEON class attack submarine.
+      <LineBreak/>
+      <LineBreak/>
+      5. WEAPON RELEASE: Authorized on all submarine contacts.
+      <LineBreak/>
+      <LineBreak/>
+      6. EMCON: No restrictions.
+	  <LineBreak/>
+      <LineBreak/>
+      6. REMARK: The American attack submarine is a dangerous enemy and must not be underestimated. Good luck, Comrades.
     </TextBlock>
 </Grid>

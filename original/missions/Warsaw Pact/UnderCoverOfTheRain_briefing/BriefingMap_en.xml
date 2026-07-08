@@ -11,7 +11,7 @@
 		<!-- Mission Area Ellipse -->
         <Ellipse Canvas.Left="100" Canvas.Top="470" Width="80" Height="80" Opacity="0.25" Fill="Red"/>
 		<!-- Mission Area Text -->
-        <TextBlock Canvas.Left="75" Canvas.Top="550" Text="可能的護衛隊位置" Foreground="White"/>
+        <TextBlock Canvas.Left="75" Canvas.Top="550" Text="Possible Convoy Location" Foreground="White"/>
 		<!-- Group 1 icon -->
         <Grid Canvas.Left="90" Canvas.Top="360">
             <Grid.ColumnDefinitions>
@@ -24,7 +24,7 @@
             </Canvas>
         </Grid>
 		<!-- Group 1 Name -->
-        <TextBlock Canvas.Left="60" Canvas.Top="340" Text="佐爾基打擊群" Foreground="Blue"/>
+        <TextBlock Canvas.Left="60" Canvas.Top="340" Text="Zorky strike group" Foreground="Blue"/>
 		<!-- Group 2 icon -->
         <Grid Canvas.Left="300" Canvas.Top="295">
             <Grid.ColumnDefinitions>
@@ -37,7 +37,7 @@
             </Canvas>
         </Grid>
 		<!-- Group 2 Name -->
-        <TextBlock Canvas.Left="260" Canvas.Top="280" Text="備援打擊群" Foreground="Blue"/>
+        <TextBlock Canvas.Left="260" Canvas.Top="280" Text="Backup strike group" Foreground="Blue"/>
 
 		<!-- Tool for making paths: https://yqnn.github.io/svg-path-editor/ -->
 		<!-- Group 1 Arrow 1 -->

@@ -13,20 +13,20 @@
         </Border>
 
 		<!-- Map Labels -->
-		<TextBlock Foreground="Black" Text="蘇聯（C.C.C.P.）" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="200" Canvas.Top="600"/>
-		<TextBlock Foreground="SteelBlue" Text="巴倫支海" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="150" Canvas.Top="150"/>
+		<TextBlock Foreground="Black" Text="C.C.C.P." HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="200" Canvas.Top="600"/>
+		<TextBlock Foreground="SteelBlue" Text="Barents Sea" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="150" Canvas.Top="150"/>
 		
 		<!-- Mission Area Ellipse -->
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Canvas.Left="400" Canvas.Top="150" >
 			<Ellipse Width="200" Height="200" Opacity="0.25" Fill="{StaticResource NTDS.HostileColour}"/>
 			<!-- Mission Area Text -->
-			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" Text="搜尋區域" HorizontalAlignment="Center"/>
+			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" Text="Search Area" HorizontalAlignment="Center"/>
 		</StackPanel>
 		
 		<!-- 2nd Coastal Division Detachment ANTON -->
 		<StackPanel Orientation="Vertical" Canvas.Left="600" Canvas.Top="450">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="第二海岸師 安東分遣隊"/>
+                <Run Text="2nd Coastal Division Detachment ANTON"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Surface}"/>
@@ -34,10 +34,10 @@
             </Canvas>
         </StackPanel>
 		
-		<!-- Il-38 145th PLAP -->
+		<!-- Ka-25 745th PLAVP -->
 		<StackPanel Orientation="Vertical" Canvas.Left="500" Canvas.Top="500">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="Il-38 第145反潛航空兵團"/>
+                <Run Text="Ka-25 745th PLAVP"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.FriendColour}" Data="{StaticResource NTDS.Allied.Air}"/>
@@ -48,7 +48,7 @@
 		<!-- Sturgeon-class SSN -->
 		<StackPanel Orientation="Vertical" Canvas.Left="440" Canvas.Top="230">
 			<TextBlock Foreground="Red" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
-                <Run Text="鱘魚級攻擊核潛艦（疑似）"/>
+                <Run Text="Sturgeon-class SSN (?)"/>
             </TextBlock>
 			<Canvas Width="22.5" Height="22.5" HorizontalAlignment="Center">
                 <Path StrokeThickness="{DynamicResource ContactIconThickness}" Stroke="{StaticResource NTDS.HostileColour}" Data="{StaticResource NTDS.Enemy.Submarine}"/>
@@ -58,7 +58,7 @@
 
 		<!-- Arrows -->
 		<!-- Tool for making paths: https://yqnn.github.io/svg-path-editor/ -->
-        <Path Canvas.Left="510" Canvas.Top="425" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.FriendColour}">
+        <Path Canvas.Left="515" Canvas.Top="425" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.FriendColour}">
             <Path.RenderTransform>
                 <RotateTransform Angle="340"/>
             </Path.RenderTransform>

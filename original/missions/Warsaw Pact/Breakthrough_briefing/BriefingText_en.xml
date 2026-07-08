@@ -27,58 +27,40 @@
     <TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" FontSize="{StaticResource Font.Size.Header}">
 		<Run Text="{Binding MissionStartTime.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTime.Minute, StringFormat={}{0:00}}"/>Z (<Run Text="{Binding MissionStartTimeLocal.Hour, StringFormat={}{0:00}}"/>:<Run Text="{Binding MissionStartTimeLocal.Minute, StringFormat={}{0:00}}"/>L)
 	</TextBlock>
-    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
-    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="北方艦隊司令"/>
-    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
-    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="打擊部隊指揮官"/>
-    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨："/>
-    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="任務命令"/>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FROM:"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="GLAVCOM VMF"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO:"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COM TF OREL"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ:"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="MISSION ORDERS"/>
     <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="#0-144.142.143"/>
-	    <!--
 	<Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
-	-->
     <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+        1.  (S) TACTICAL SITUATION:<LineBreak/>
+      <LineBreak/>IN ORDER TO BREAK INTO ATLANTIC, YOU HAVE TO PASS THROUGH GIBRALTAR BASE. EXPECT HEAVY RESISTANCE FROM HOSTILE NAVAL
+      AND AIR FORCES. WHATEVER THE COST, YOU MUST KEEP CARRIER INTACT. CHECK YOUR TARGETS: CIVILIAN CASUALTIES ARE UNACCEPTABLE.
       <LineBreak/>
       <LineBreak/>
-      1.（機密）戰術態勢：
+      2.  (S) PRIMARY OBJECTIVE:
       <LineBreak/>
       <LineBreak/>
-       我方地面部隊正嘗試佔領納爾維克港，由於天氣惡劣，空軍無法破壞敵方補給線，故需要進行海上封鎖。
+      RENDEZVOUS WITH FRIENDLY SUBMARINE IN DESIGNATED AREA
       <LineBreak/>
-	  <LineBreak/> 你的海上部隊需要攔截運輸部隊和補給的敵方護航隊，該護航隊正開往納爾維克港以增援當地守軍。
-      <LineBreak/>
-      <LineBreak/>
-      <LineBreak/>
-      2.（機密）主要目標：
+      - VILNUS MUST SURVIVE
       <LineBreak/>
       <LineBreak/>
-	  進入韋斯特峽灣，找到護航隊，確保補給船艦無法抵達目的地。
-      <LineBreak/>
-	  <LineBreak/>
-	  務必識別目標，不得擊沉中立船艦。
+      3. (S) SECONDARY OBJECTIVE:
       <LineBreak/>
       <LineBreak/>
-      <LineBreak/>
-      3.（機密）威脅報告：
-      <LineBreak/>
-      <LineBreak/>
-	  預計有敵方水面船艦在韋斯特峽灣巡邏。
-      <LineBreak/>
-	  <LineBreak/>
-	  此區域內可能有敵方潛艇。
-      <LineBreak/>
-	  <LineBreak/>
-	  由於天氣惡劣，敵方飛機大概率不會出現。
+      NEUTRALIZE GIBRALTAR BASE IF POSSIBLE
       <LineBreak/>
       <LineBreak/>
-      <LineBreak/>
-      4.（機密）紅色警報——允許與所有敵對目標交戰。
-      <LineBreak/>
-      <LineBreak/>
-	  <LineBreak/>
-      5.（機密）電磁輻射控制——保持無線電靜默，除非另有指示。
+      4.  (S) AVOID DETECTION BY ENEMY AIR PATROLS AS LONG AS POSSIBLE
       <LineBreak/>
       <LineBreak/>
+      5.  (S) WEAPONS RESTRICTED
       <LineBreak/>
+      <LineBreak/>
+      6.  (S) EMCON - MAINTAIN RADIO SILENCE UNTIL OTHERWISE DIRECTED
     </TextBlock>
 </Grid>

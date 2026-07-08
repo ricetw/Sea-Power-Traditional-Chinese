@@ -1,0 +1,52 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+    <TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+        1985年2月2日
+    </TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="北方艦隊總部"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="K-527號潛艇艇長"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="挪威海攔截行動"/>
+        <!--
+    <Image Grid.Row="1" Width="250" Grid.ColumnSpan="4" Grid.RowSpan="6" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Assets[ts_banner]}"/>
+    -->
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+        1.態勢：我方部隊在納爾維克附近海域持續作戰，嘗試從北約守軍手中夺取這座堡壘。雙方兵力對比正向我方倾斜，但信號情報截獲信息顯示以愛荷華級戰列艦為核心的美國水面打擊群正穿過冰島和法羅群島之間的海域前來支援。
+        <LineBreak/>
+        <LineBreak/>
+        2.任務：北方艦隊潛艇將沿預計航線在美國水面打擊群前往納爾維克的途中攔截。擊沉美國戰列艦是首要任務。
+        <LineBreak/>
+        <LineBreak/>
+        3.執行：K-527號潛艇將向南航行至攔截點，與附近的K-452號和B-402號潛艇會合，協調攻擊並擊沉美國艦隊。
+        <LineBreak/>
+        <LineBreak/>
+        4.美國水面打擊群可能由佩里級、諾克斯級和斯普魯恩斯級反潛護航艦和貝爾納普級防空護航艦組成。預計美國的P-3反潛機將前來支援。
+        <LineBreak/>
+        <LineBreak/>
+        5.此次行動如果成功，即可切斷敵方陸軍的海上支援，並且使我們取得納爾維克之戰的最終勝利。祝你好運，同志。
+      </TextBlock>
+</Grid>

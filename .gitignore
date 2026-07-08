@@ -43,3 +43,5 @@ original/environment.ini
 original/hash.dat
 original/InstantActionConfig.ini
 original/nations_reference.ini
+# Large video assets are kept outside Git.
+*.mp4
