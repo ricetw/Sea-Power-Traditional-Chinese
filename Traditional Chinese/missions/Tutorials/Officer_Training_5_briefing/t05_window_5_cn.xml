@@ -29,7 +29,7 @@
         <StackPanel Orientation="Horizontal" Margin="0" HorizontalAlignment="Center">
 			<Button Width="100" Height="50" Margin="15" FontSize="16" VerticalAlignment="Bottom" Content="上一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_5_briefing/t05_window_4_cn.xml"/>
 			<Button Width="100" Height="50" Margin="15" FontSize="16" VerticalAlignment="Bottom" Content="下一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_5_briefing/t05_window_6_cn.xml"/>
-			
+
 		</StackPanel>
 	</StackPanel>
     </ScrollViewer>

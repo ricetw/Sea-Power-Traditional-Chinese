@@ -15,7 +15,7 @@
 		<TextBlock Foreground="SteelBlue" Text="宗谷海峽" HorizontalAlignment="Center" FontStyle="Italic" FontSize="16" FontWeight="Bold" Canvas.Left="925" Canvas.Top="330"/>
 		<TextBlock Foreground="Black" Text="庫頁島" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="1000" Canvas.Top="100"/>
 		<TextBlock Foreground="Black" Text="北海道" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="950" Canvas.Top="550"/>
-		
+
 		<StackPanel Orientation="Vertical" Canvas.Left="450" Canvas.Top="350">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
                 <Run Text="望潮號 SS-574"/>
@@ -25,7 +25,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<StackPanel Orientation="Vertical" Canvas.Left="200" Canvas.Top="350">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
                 <Run Text="2 艘蘇聯潛艦（？）"/>
@@ -35,7 +35,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<Path Canvas.Left="380" Canvas.Top="360" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.HostileColour}">
             <Path.RenderTransform>
                 <RotateTransform Angle="85"/>

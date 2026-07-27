@@ -11,7 +11,7 @@
                 <Border BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="30" Height="20" Margin="200,0,0,140" BorderBrush="{StaticResource Brush.Border.FocusAccent}"/>
             </Grid>
         </Border>
-		
+
 		<!-- Photo inset -->
         <Border Canvas.Left="10" Canvas.Top="10" BorderThickness="5" BorderBrush="White">
 			<Border.Effect>
@@ -30,7 +30,7 @@
 		<!-- Map Labels -->
 		<TextBlock Foreground="Black" Text="挪威" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="900" Canvas.Top="550"/>
 		<TextBlock Foreground="SteelBlue" Text="挪威海" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="200" Canvas.Top="250"/>
-		
+
 		<!-- K-527 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="550" Canvas.Top="200">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
@@ -41,7 +41,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- K-452 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="650" Canvas.Top="150">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
@@ -52,7 +52,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- B-402 -->
 		<StackPanel Orientation="Vertical" Canvas.Left="690" Canvas.Top="250">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
@@ -63,7 +63,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- Iowa SAG -->
 		<StackPanel Orientation="Vertical" Canvas.Left="400" Canvas.Top="400">
 			<TextBlock Foreground="Red" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
@@ -74,7 +74,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<!-- P-3C -->
 		<StackPanel Orientation="Vertical" Canvas.Left="550" Canvas.Top="550">
 			<TextBlock Foreground="Red" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
@@ -88,7 +88,7 @@
 
 		<!-- Arrows -->
 		<!-- Tool for making paths: https://yqnn.github.io/svg-path-editor/ -->
-		
+
 		<Path Canvas.Left="500" Canvas.Top="350" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.HostileColour}">
             <Path.RenderTransform>
                 <RotateTransform Angle="45"/>
@@ -99,6 +99,6 @@
                 <RotateTransform Angle="25"/>
             </Path.RenderTransform>
         </Path>
-		
+
 	</Canvas>
 </Viewbox>

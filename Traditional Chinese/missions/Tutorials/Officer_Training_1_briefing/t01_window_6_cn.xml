@@ -27,7 +27,7 @@
 
         <StackPanel Orientation="Horizontal" Margin="0" HorizontalAlignment="Center">
 			<Button Width="100" Height="50" Margin="0,0,15,0" FontSize="16" VerticalAlignment="Bottom" Content="上一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_5_cn.xml"/>
-			<Button Width="100" Height="50" Margin="0" FontSize="16" VerticalAlignment="Bottom" Content="下一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_6a_cn.xml"/>	
+			<Button Width="100" Height="50" Margin="0" FontSize="16" VerticalAlignment="Bottom" Content="下一頁" Command="{Binding OpenFileCommand}" CommandParameter="missions/Tutorials/Officer_Training_1_briefing/t01_window_6a_cn.xml"/>
 		</StackPanel>
 	</StackPanel>
 	</ScrollViewer>

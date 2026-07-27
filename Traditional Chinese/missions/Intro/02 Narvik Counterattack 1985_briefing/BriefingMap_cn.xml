@@ -26,7 +26,7 @@
 
 		<TextBlock Foreground="SteelBlue" Text="挪威海" HorizontalAlignment="Center" FontStyle="Italic" FontSize="16" FontWeight="Bold" Canvas.Left="325" Canvas.Top="125"/>
 		<TextBlock Foreground="Black" Text="挪威" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Canvas.Left="900" Canvas.Top="500"/>
-		
+
 		<StackPanel Orientation="Vertical" Canvas.Left="850" Canvas.Top="200">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
                 <Run Text="現代級打擊群"/>
@@ -36,7 +36,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<StackPanel Orientation="Vertical" Canvas.Left="890" Canvas.Top="75">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
                 <Run Text="Tu-95RT 偵察機"/>
@@ -46,7 +46,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.FriendColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<StackPanel Orientation="Vertical" Canvas.Left="700" Canvas.Top="300">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
                 <Run Text="挪威攻擊部隊"/>
@@ -56,7 +56,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<StackPanel Orientation="Vertical" Canvas.Left="550" Canvas.Top="150">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
                 <Run Text="美軍特遣群"/>
@@ -66,7 +66,7 @@
                 <Ellipse Canvas.Left="10" Canvas.Top="10" Width="3" Height="3" StrokeThickness="1.325" Stroke="{StaticResource NTDS.HostileColour}"/>
             </Canvas>
         </StackPanel>
-		
+
 		<StackPanel Orientation="Vertical" Canvas.Left="450" Canvas.Top="300">
 			<TextBlock Foreground="{StaticResource NTDS.HostileColour}" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
                 <Run Text="挪威空軍 2 架 F-5A"/>

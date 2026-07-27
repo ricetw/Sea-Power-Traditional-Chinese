@@ -25,7 +25,7 @@
 				<Run FontWeight="Bold" FontSize="12" Text="•激光制導炸彈："/><Run Text="需要目標的清晰視野，讓飛機用激光指示器進行引導。注意：多架飛機之間可以互相進行“伙伴激光指示”，即一架飛機使用激光指示器為另一架飛機的武器提供引導！"/>
 				<LineBreak/>
 				<Run FontWeight="Bold" FontSize="12" Text="•電視制導炸彈："/><Run Text="需要目標的清晰視野（如無云層遮擋），讓電視導引頭看到目標。這類武器通常是滑翔炸彈，因此需要從高空投掷才能最大化射程。"/>
-				
+
 			</TextBlock.Inlines>
 		</TextBlock>
 		<LineBreak/>

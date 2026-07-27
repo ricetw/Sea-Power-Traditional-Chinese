@@ -1,0 +1,66 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		FLASH
+		<LineBreak/>
+		Z 261055Z JUN 85
+		</TextBlock>
+		<TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="FM"/>
+		<TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CINCPACFLT PEARL HARBOR HI"/>
+		<TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="TO"/>
+		<TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		ALL PACFLT UNITS WESTPAC<LineBreak/>
+		CO USS HAWAII CGN-43
+		</TextBlock>
+		<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="INFO"/>
+		<TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		COMSEVENTHFLT PEARL HARBOR HI<LineBreak/>
+		CTF 77 YOKOSUKA JA<LineBreak/>
+		COMUSJAPAN YOKOTA AB<LineBreak/>
+		NAVFAC OKINAWA
+		</TextBlock>
+		<TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="SUBJ"/>
+		<TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="戰爭警報 - 東海撤離"/>
+		<TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）對華約部隊之敵對行動已於歐洲與太平洋展開，我軍現已進入戰時態勢。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）立即生效，以最佳航速脫離東海。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）威脅：敵軍極可能已掌握貴部隊概略位置。預期尖閣群島以西有中國水面兵力，尖閣以北有蘇聯重型水面部隊企圖接近，且中國大陸方向可能出現遠程蘇聯海上偵察與打擊航空兵。撤離航線宮古島以北評估存在潛艦威脅。
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）友軍：VS-29 將自嘉手納派遣 1 架 S-3A 前往貴艦，執行搜索與攻擊支援。沖繩海軍設施將於取得時轉發聲學基準點回報。目前無其他盟軍支援可用。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）備註：作戰區內仍有民用與漁業交通。交戰前務必識別目標。通過琉球群島後，向東進入菲律賓海並脫離該區域，隨後等待後續任務。祝你好運，HAWAII。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		DECL OADR BT
+	</TextBlock>
+</Grid>

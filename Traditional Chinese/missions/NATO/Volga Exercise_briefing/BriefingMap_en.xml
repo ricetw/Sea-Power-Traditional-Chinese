@@ -19,13 +19,13 @@
                 <Run Text="USS New Jersey BB-62"/><LineBreak/>
                 <Run Text="USS Yorktown CG-48"/>
            </TextBlock>
-		</Border>   
+		</Border>
 
 		<!-- Map Labels -->
 		<TextBlock Foreground="Black" Text="Iceland" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="875" Canvas.Top="375"/>
 		<TextBlock Foreground="Black" Text="Greenland" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="200" Canvas.Top="50"/>
 		<TextBlock Foreground="SteelBlue" Text="North Atlantic Ocean" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Canvas.Left="200" Canvas.Top="600"/>
-		
+
 		<!-- New Jersey SAG group icon and text -->
 		<StackPanel Orientation="Vertical" Canvas.Left="250" Canvas.Top="500">
 			<TextBlock Foreground="Blue" TextAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
@@ -64,13 +64,13 @@
                 <RotateTransform Angle="50"/>
             </Path.RenderTransform>
         </Path>
-		
+
 		<Path Canvas.Left="725" Canvas.Top="420" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.FriendColour}">
             <Path.RenderTransform>
                 <RotateTransform Angle="300"/>
             </Path.RenderTransform>
         </Path>
-		
+
 		<Path Canvas.Left="590" Canvas.Top="250" Data="M 0 -7 L 10 10 L 4 10 L 4 60 L -4 60 L -4 10 L -10 10 Z" Fill="{StaticResource NTDS.HostileColour}">
             <Path.RenderTransform>
                 <RotateTransform Angle="230"/>

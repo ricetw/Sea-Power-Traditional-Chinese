@@ -27,7 +27,7 @@
 		<TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="穿越行動"/>
 		<TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="1985年6月24日"/>
 		<TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
-		1.北約部隊已開始對我們在德國的同志發動攻勢。我們現在處於戰時狀態。海軍的職責是阻止北約部隊從美國增援歐洲。因此北方艦隊的所有潛艇收到命令進入大西洋。 
+		1.北約部隊已開始對我們在德國的同志發動攻勢。我們現在處於戰時狀態。海軍的職責是阻止北約部隊從美國增援歐洲。因此北方艦隊的所有潛艇收到命令進入大西洋。
 		<LineBreak/>
 		<LineBreak/>
 		2.K-316號潛艇從揚馬延附近的巡邏陣位出發，穿越丹麥海峽進入大西洋。

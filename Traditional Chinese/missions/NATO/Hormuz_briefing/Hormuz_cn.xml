@@ -46,7 +46,7 @@
 	<!--
 	  Due to the recent attacks by Iran on merchant shipping passing in and out of the Persian Gulf, it has been decided to organize escorted convoys to protect maritime trade.
 	-->
-	
+
 	伊朗伊斯蘭共和國威脅要關閉霍爾木兹海峽，禁止與美國及盟友利益相關的航運，並以此獲得國際影響力。
       <LineBreak/>
       <LineBreak/>
@@ -72,7 +72,7 @@
 	<!--
       Intel believes only a small force of patrol craft have been sortied by Iran at this point. Your forces should be able to brush them aside with little effort.
 	-->
-	
+
 	根據評估，阿巴斯港的伊朗海軍和革命衛隊海軍很可能會被部署到霍爾木兹海峽，二者可能會組成聯合部隊。預計敵方將有大量的快速攻擊艇或近海快速攻擊艇，但大型巡邏船只的數量有限。
       <LineBreak/>
       <LineBreak/>
@@ -91,8 +91,8 @@
 	  <!--
       5.  (S) EMCON - Maintain radio silence until otherwise directed
 	  -->
-	  
+
 	  4.（密）電磁輻射控制——敵方很可能會使用反艦飛彈，因此限制使用電磁輻射設備。
-	  
+
     </TextBlock>
 </Grid>
