@@ -33,3 +33,6 @@ original/campaigns/weather
 # Campaign root shared map/navigation data; not translation targets.
 original/campaigns/*.ini
 Traditional Chinese/campaigns/*.ini
+# Local copied original campaign sources used for translation reference.
+original/campaigns/pacific-strike-task-force/
+original/campaigns/strike-group-molniya-campaign/
