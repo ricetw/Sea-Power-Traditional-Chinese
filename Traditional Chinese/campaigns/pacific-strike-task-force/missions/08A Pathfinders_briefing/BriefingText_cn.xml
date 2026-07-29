@@ -1,0 +1,66 @@
+﻿<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+        特急
+        <LineBreak/>
+        Z 180600Z SEP 85
+    </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="MARITIME HQ"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+        <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="HMAS ORION S61"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="副知"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+        HMAS PLATYPUS<LineBreak/>
+        COMAUSFLT<LineBreak/>
+        CINCPACFLT<LineBreak/>
+        COMSUBPAC
+        </TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+        <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="TASKING - PUERTO PRINCESA RECONNAISSANCE"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密 - 可向美國、日本發布
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）對巴拉望的兩棲行動即將展開。敵軍已在公主港市建立主要據點，評估岸上設施包含指揮、防空與岸基飛彈陣地。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）登陸兵力進入突擊區前，必須削弱該據點。登陸開始前需要完成確認性目視偵察。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）自山打根向北航行，對公主港進場路線實施秘密偵察。滲透該區，使用潛望鏡目視識別敵岸上設施，並回報確認目標。必須識別下列疑似位於公主港市的單位：
+		<LineBreak/>
+		- 安東尼奧・包蒂斯塔空軍基地 SA-10 防空飛彈連
+		<LineBreak/>
+		- 港口入口南北兩側的蠶式飛彈陣地
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）避免遭敵方水面與空中巡邏發現。僅在保全本艇或完成任務所需時授權交戰。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）偵察完成後，向東脫離該區。確認目標後不得停留於作戰區。祝好運，航行順遂。
+		<LineBreak/>
+		<LineBreak/>
+		機密 - 可向美國、日本發布
+	</TextBlock>
+</Grid>

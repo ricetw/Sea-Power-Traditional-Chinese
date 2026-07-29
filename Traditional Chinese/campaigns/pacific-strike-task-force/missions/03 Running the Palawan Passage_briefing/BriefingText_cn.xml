@@ -1,0 +1,66 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+	特急
+	<LineBreak/>
+	Z 070230Z JUN 85
+	</TextBlock>
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CTF 77 YOKOSUKA JA"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="副知"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		CINCPACFLT PEARL HARBOR HI<LineBreak/>
+		COMUSJAPAN YOKOTA AB
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="NEW ORDERS - DEFENSE OF SINGAPORE"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）敵方空中與海上兵力現已威脅新加坡。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）立即生效，{TaskForceName} 自沖繩任務中抽調。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）以最佳航速前往馬來西亞山打根，加入正在該處集結的盟軍增援群。
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）懷疑巴拉望航道與婆羅洲西北方有敵方潛艦存在。情報研判中國潛艦可能已在巴拉巴克海峽北部布雷。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）注意：所有盟軍潛艦均已投入台灣與沖繩方向。巴拉望區域對水下接觸目標為自由射擊區。
+		<LineBreak/>
+		<LineBreak/>
+		6.（機密）抵達山打根並等待後續命令。注意：因補給狀況受限，山打根無法提供彈藥再補給。祝好運。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		DECL OADR BT
+	</TextBlock>
+</Grid>

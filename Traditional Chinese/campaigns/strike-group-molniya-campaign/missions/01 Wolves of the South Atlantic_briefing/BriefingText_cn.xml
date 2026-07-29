@@ -1,0 +1,76 @@
+﻿<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="北方艦隊總部"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="閃電打擊群指揮官"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="南大西洋行動"/>
+    <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="1985年6月25日"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	執行訊息
+	<LineBreak/>
+    <LineBreak/>
+	我方已確認此次敵對行為的爆發是因為北約部隊在挪威海進行軍事演習期間對我方觀察哨動武。現有資訊表明北約已做好升級衝突的準備，他們正在等待發動進攻的借口。
+    <LineBreak/>
+    <LineBreak/>
+	蘇聯武裝部隊已進入戰時狀態。對北約部隊及其盟友商船展開無限制海空作戰行動，命令立即生效。
+	<LineBreak/>
+    <LineBreak/>
+	附件（A）提供了途經南大西洋前往開普敦的北約商船識別數據。情報評估顯示這些商船的任務是支援迪戈加西亞島的北約設施。最近一次衛星飛越表明這些商船尝試在途中與美國護航艦艇組成護航隊。當前行動的首要目標是在它們進入南非的北約空中部隊掩護範圍前將其發現並摧毀。
+	<LineBreak/>
+    <LineBreak/>
+	摧毀這些船隻後，前往安哥拉羅安達與我方補給單位會合，進行補給並接受進一步指示。
+	<LineBreak/>
+    <LineBreak/>
+	海洋已成戰場。祝你好運，同志。
+	<LineBreak/>
+    <LineBreak/>
+	訊息結束
+	<LineBreak/>
+	/署名/海軍上將I·M·卡皮塔涅茨
+	<LineBreak/>
+	<LineBreak/>
+	絕密
+	<LineBreak/>
+	閱後銷毀
+	<LineBreak/>
+	<LineBreak/>
+	---
+	<LineBreak/>
+	<LineBreak/>
+	附件（A）
+	<LineBreak/>
+	<LineBreak/>
+	北約商船隊部署情況如下。情報評估顯示至少有兩艘諾克斯級或布鲁克級護衛艦在場。
+	<LineBreak/>
+	<LineBreak/>
+	• SS AMERICAN LYNX——槍騎兵級集裝箱船
+	<LineBreak/>
+	• SS CAPE CHALMERS AK-5036——C4級雜貨船
+	<LineBreak/>
+	• MV EDSON NEW ORLEANS——中型成品油船
+	<LineBreak/>
+	• SS PRESIDENT MONROE——改進型C4級雜貨船
+	<LineBreak/>
+    </TextBlock>
+</Grid>

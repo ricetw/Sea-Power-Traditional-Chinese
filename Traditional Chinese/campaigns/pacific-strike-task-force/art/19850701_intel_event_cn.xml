@@ -1,0 +1,155 @@
+﻿<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="海軍電文" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******機　密*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="海軍部" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					例行<LineBreak/>
+					R 011200Z JUL 85
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 1821200"/>
+
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="發自"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="CTF 77 橫須賀 JA"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="致"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="指揮官"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="NAHA 沖繩 JA"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="副知"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="CINCPACFLT PEARL HARBOR HI"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="COMUSJAPAN YOKOTA AB JA"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="CNO WASHINGTON DC"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="主旨"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="情報摘要 01/1200Z - 02/1200Z - 西太平洋"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					機密
+					<LineBreak/>
+					電文分隔
+					<LineBreak/>
+					<LineBreak/>
+					1.（機密）摘要：敵軍在西太平洋持續進攻。蘇聯與中國部隊正利用盟軍在日本、韓國、菲律賓與東南亞初期部署失衡之機擴張戰果。目前敵軍動向顯示其作戰重心正南移至南海，可能意圖孤立新加坡，並切斷盟軍通往印度洋的海上交通線。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					2.（機密）敵情：基輔號航艦群於 6 月 30 日摧毀企圖阻止其通過的大韓民國水面兵力後，通過對馬海峽。基輔號目前位置不明。基洛夫與光榮級水面群同樣位置不明——目前評估其中一支或兩支正向南移動，支援敵軍更大規模攻勢。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3.（機密）友軍狀況：
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 小鷹號在橫須賀外海觸雷後仍無法作戰。第 9 艦載機聯隊已轉場並分散至岸上，等待重新編配。
+					<LineBreak/>
+					- 星座號與 DELTA 戰鬥群正接手日本防衛任務。
+					<LineBreak/>
+					- 第 77 特遣隊水面打擊兵力於「魔雷」台灣海峽行動後停泊沖繩。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4.（機密）盟軍／區域狀況：日本與韓國正遭受蘇聯空中、飛彈與海上猛烈攻擊；殘存部隊已投入本土防衛。馬來西亞與新加坡通報遭蘇聯及越南空軍攻擊。印尼中央權力癱瘓，蘇哈托總統下落不明。印度已宣布中立，但目前報告顯示蘇聯部隊正使用印度港口與機場進行補給。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5.（機密）評估：敵軍意圖是在美國航艦與後勤兵力能作出反應前迅速擴張戰果。印尼癱瘓與印度對蘇聯的默許合作，大幅限縮盟軍在南翼的選項。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="23" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					6.（機密）指揮官意見：華約部隊展現出戰前任何規劃都未預期的強烈攻勢。新加坡防衛現在仰賴可用海軍兵力迅速集中，趕在蘇聯與越南行動封閉南海進出通道之前完成部署。後續命令將另行發送。祝各位好運，航行順遂。第 77 特遣隊司令部發。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					署名：EDWARDS
+					<LineBreak/>
+					CTF 77
+					<LineBreak/>
+					<LineBreak/>
+					電文分隔
+					<LineBreak/>
+					機密 依原機關決定解密
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

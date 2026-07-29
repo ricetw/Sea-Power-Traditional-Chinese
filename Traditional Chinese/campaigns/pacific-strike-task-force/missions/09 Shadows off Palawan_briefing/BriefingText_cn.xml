@@ -1,0 +1,68 @@
+﻿<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+        特急
+        <LineBreak/>
+        Z 100300Z OCT 85
+    </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CTF 77"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+        <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="{TaskForceFlagshipName} {TaskForceName} SANDAKAN MALAYSIA"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="副知"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+        CINCPACFLT PEARL HARBOR HI<LineBreak/>
+        81 WING (PROVISIONAL) RAAF SANDAKAN MALAYSIA
+        </TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+        <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPLAN-OPERATION CHALLENGER"/>
+        <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+        最高機密
+        <LineBreak/>
+        <LineBreak/>
+        1.（機密）本命令係依國防部長授權發布之執行命令。
+        <LineBreak/>
+        <LineBreak/>
+        2.（機密）態勢：敵軍控制巴拉望，並在公主港與奎松設有堅固據點。盟軍因韓國、日本與台灣海峽戰事而兵力過度延展；東南亞盟友能提供有限地面兵力，但剩餘空中或海上支援甚少。華約在歐洲與太平洋的攻勢超出戰前估計，而中國在蘇聯支援下奪取巴拉望，已嚴重降低盟軍作戰彈性。收復巴拉望為最高優先事項。
+        <LineBreak/>
+        <LineBreak/>
+        2.（機密）任務：盟軍將執行「挑戰者」行動，將美菲聯合兵力登陸巴拉望以收復該島。
+        <LineBreak/>
+        <LineBreak/>
+        3.（機密）執行：第 77 特遣隊將透過反水面與反潛掃蕩，清除公主港南方進場路線。第 77 特遣隊與支援航空單位將定位並摧毀敵岸基反艦飛彈陣地與防空飛彈陣地，隨後護送第 17 陸戰兩棲部隊前往登陸灘頭。
+        <LineBreak/>
+        <LineBreak/>
+        4.（最高機密）威脅：中國部隊已以岸基反艦飛彈、岸砲陣地與重型沿岸單位增援巴拉望，後者可能藏匿於漁船交通與海灣中。機場北方一座蘇聯 S-300 連有效射程 50 海里，為最高優先威脅，必須摧毀。
+        <LineBreak/>
+        <LineBreak/>
+        5.（機密）盟軍兵力：航空聯隊資產將由山打根出擊。盟軍運輸船已編入 TG 77.6，其存活至關重要。
+        <LineBreak/>
+        <LineBreak/>
+        6.（機密）備註：預期將有後續行動，且沒有再武裝機會。節約彈藥。祝好運，獵殺順利。第 77 特遣隊司令部發。
+        <LineBreak/>
+        <LineBreak/>
+        機密
+        <LineBreak/>
+        DECL OADR BT
+    </TextBlock>
+</Grid>

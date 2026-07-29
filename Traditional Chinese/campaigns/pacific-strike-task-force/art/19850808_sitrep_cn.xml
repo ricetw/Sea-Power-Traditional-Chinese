@@ -1,0 +1,161 @@
+﻿<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="海軍電文" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******機　密*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="海軍部" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					立即<LineBreak/>
+					O 082100Z AUG 85
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 2202100"/>
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="發自"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="CTF 77"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="致"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16" Text="TF 77, CVW-9, NAVFAC DARWIN, 10 SQN RAAF"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="副知"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="CINCPACFLT"/>
+				<TextBlock Grid.Row="13" Grid.Column="0" FontSize="16" Text="主旨："/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="態勢報告 09/1200Z - 10/1200Z - 電文第 047/85 號"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					機密
+					<LineBreak/>
+					<LineBreak/>
+					1.（機密）戰略態勢：新加坡與馬來西亞失守後，美國與盟軍已集中於達爾文。敵軍持續向東南推進，情報單位懷疑其目標是完全孤立正在呂宋苦戰的盟軍，迫使我方接受停戰安排。敵軍使蘇門答臘與爪哇失去作用後，如今可完全進入印度洋，蘇聯部隊可由此威脅波斯灣、西澳與南非。蘇聯海軍航空兵自海參崴一路向南至金蘭灣皆享有行動自由，且已有報告指出其潛艦進入帝汶海。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					2.（機密）任務：第 77 特遣隊將與達爾文盟軍協同執行澳洲防衛任務，由第 77 特遣隊司令部統一指揮。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3. (S) TF 77 狀態:
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 小鷹號於橫須賀觸雷後仍在普吉特灣維修。
+					<LineBreak/>
+					- 第 9 艦載機聯隊部分兵力以達爾文為岸基運作。
+					<LineBreak/>
+					- 穆斯布魯格號應澳洲政府要求，已分遣至庫克敦執行緊急任務。
+					<LineBreak/>
+					- VAW-114 鷹眼機於 8 月 7 日在東帝汶上空損失。替補機正由第 14 艦載機聯隊前來，預計 8 月 14 日抵達。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4.（機密）盟軍兵力：
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 澳洲：澳洲皇家空軍 F-111 兵力在對印尼境內敵軍集結區實施遮斷攻擊時嚴重耗損。澳洲皇家空軍 JORN 超視距搜索雷達於 8 月 3 日遭敵方特工破壞停用。
+					<LineBreak/>
+					- 馬來西亞／印尼：友軍兵力已分散或投降，預期不會再形成有組織抵抗。
+					<LineBreak/>
+					- 新加坡：全面潰敗導致英國皇家海軍 F 部隊全軍覆沒。其他英軍兵力已全數投入大西洋與地中海任務。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5.（機密）情報／威脅：
+				</TextBlock>
+				<TextBlock Grid.Row="22" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 澳洲海岸觀察員已秘密滲入印尼，監視關鍵咽喉點（巽他、龍目、翁拜／韋塔）的通行動向。
+					<LineBreak/>
+					- 帝汶海與阿拉弗拉海上空 Bear-D 活動增加，顯示敵軍可能在未來 48 至 72 小時內朝我方方向出擊。VF-111 回報 8 月 8 日擊落一架，另有一架 Bear-D 逃脫。
+					<LineBreak/>
+					- 訊號情報顯示敵方潛艦開始向南通行。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="23" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					6.（機密）備註：這是對敵戰役中的關鍵轉折點。我們被迫後撤的距離超出戰前任何估計，但只要協調得當，我們能在此徹底擋住敵軍。祝各位好運，獵殺順利。第 77 特遣隊司令部發。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="24" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					署名：C. F. ROBINSON 上校
+					<LineBreak/>
+					CTF 77
+					<LineBreak/>
+					<LineBreak/>
+					機密
+					<LineBreak/>
+					DO NOT DECLASSIFY WITHOUT APPROVAL OF ADDRESSEE
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

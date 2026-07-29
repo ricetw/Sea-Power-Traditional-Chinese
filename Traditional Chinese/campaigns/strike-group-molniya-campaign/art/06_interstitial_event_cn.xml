@@ -1,0 +1,109 @@
+﻿<!-- Campaign event template USSR dispatch - formatting taken from real world examples -->
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:SeapowerUI"
+  mc:Ignorable="d"
+  d:DesignWidth="1920"
+  d:DesignHeight="1080">
+  <Viewbox>
+    <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" Height="1272" Padding="45" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="# 387/PR/51" Margin="0" FontSize="20" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="1" Grid.Column="0" Text="04.07.85 r." Margin="0" FontSize="20" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="絕密" Margin="0" TextDecorations="Underline" FontSize="20" FontWeight="Bold" TextAlignment="Right"/>
+			<TextBlock Grid.Row="1" Grid.Column="2" Text="印本編號1" Margin="0" FontSize="20" FontWeight="Bold" TextAlignment="Center"/>
+		</Grid>
+
+				<TextBlock Text="指令編號022/85" Margin="0" FontSize="20" FontWeight="Bold" TextAlignment="Left"/>
+				<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+				<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" HorizontalAlignment="Left" FontWeight="Bold" Text="發件："/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" HorizontalAlignment="Left" FontWeight="Bold" Text="北方艦隊司令"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" HorizontalAlignment="Left" FontWeight="Bold" Text="收件："/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" HorizontalAlignment="Left" FontWeight="Bold" Text="閃電打擊群指揮官"/>
+				<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" HorizontalAlignment="Left" FontWeight="Bold" Text="抄送："/>
+				<TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" HorizontalAlignment="Left" FontWeight="Bold" Text="太平洋艦隊第8作戰分艦隊司令"/>
+				<TextBlock Grid.Row="6" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" HorizontalAlignment="Left" FontWeight="Bold" Text="主題："/>
+				<TextBlock Grid.Row="6" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" HorizontalAlignment="Left" FontWeight="Bold" Text="印度洋特別行動"/>
+
+				<TextBlock Grid.Row="7" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap" FontWeight="Bold">
+					<LineBreak/>
+					總部已收到你於7月3日提交的模裡西斯近海行動總結報告。在此謹向閃電打擊群的軍官、水手、飛行員們表示祝贺，感謝他們紀律嚴明地執行了擾亂敵方海上活動的行動。我方情報顯示你的行動已迫使北約重新部署大西洋和太平洋戰區的重要資產。
+					<LineBreak/>
+					<LineBreak/>
+					你提交的附件（A）詳細列出了彈藥消耗、燃料狀況和物資準備情況，我們已审閱。總部同意你的評估，即若不立即補充物資，持續的進攻行動將無法維持。在你離開北方艦隊水域之前，我們已授權三艘商船秘密航行，運送燃料、給養、航空物資和備用飛彈。這些船隻自出發以來一直在佯裝進行商业活動。
+					<LineBreak/>
+					<LineBreak/>
+					電流表號偵察船已被指派協調會合程序和時間安排。我們允許你在遙遠區域選擇一個隱蔽的補給錨地。保障支援部隊的安全對於任務的繼續進行至關重要。
+					<LineBreak/>
+					<LineBreak/>
+					我們將在確認成功補給後發送進一步的行動指示。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="8" Grid.ColumnSpan="4" TextWrapping="Wrap" FontWeight="Bold">
+					指令結束
+					<LineBreak/>
+					/署名/卡皮塔涅茨
+					<LineBreak/>
+					<LineBreak/>
+					絕密
+					<LineBreak/>
+					閱後銷毀
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</Viewbox>
+</Page>

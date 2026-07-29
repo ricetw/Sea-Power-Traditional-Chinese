@@ -1,0 +1,62 @@
+﻿<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		特急
+		<LineBreak/>
+		Z 180217Z JUL 85
+		</TextBlock>
+		<TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+		<TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CTF 77"/>
+		<TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+		<TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER {TaskForceName} SANDAKAN MALAYSIA"/>
+		<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="副知"/>
+		<TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		CINCPACFLT PEARL HARBOR HI<LineBreak/>
+		COMUSJAPAN YOKOTA AB
+		</TextBlock>
+		<TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+		<TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RETASKING - LOMBOK STRAIT OPERATION"/>
+		<TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）敵方猛烈空中與海上攻擊已有效壓制新加坡與馬來西亞，並使印尼陷入混亂。美軍正撤往澳洲達爾文，進行重整與恢復。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）蘇聯海軍兵力正自金蘭灣南下，可能企圖攔截盟軍航運並封閉巽他與龍目海峽，切斷通往印度洋的路徑。龍目海峽已指定為美軍與盟軍單位南下通道。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）馬來西亞皇家空軍回報，一支蘇聯重型水面行動群正向東穿越爪哇海。該行動群由 1 艘 KRESTA 級巡洋艦、1 艘 KANIN 級飛彈驅逐艦與 1 艘 KRIVAK II 級巡防艦組成。
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）自山打根的 {TaskForceName} 分遣一艘水面單位，以最佳航速前往峇里。HSL-35 將派出 1 架 SH-2F 供你執行反潛巡邏，布魯姆空軍基地起飛的澳洲皇家空軍 P-3C 將報到支援海上打擊與偵察。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）摧毀蘇聯襲擊兵力，讓盟軍單位得以撤離。祝好運。第 77 特遣隊司令部發。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		DECL OADR BT
+	</TextBlock>
+</Grid>

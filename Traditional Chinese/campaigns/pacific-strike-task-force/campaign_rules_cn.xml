@@ -1,0 +1,334 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, Ancestor類型={x:類型 ContentControl}}, Path=ActualWidth, FallbackValue=700}"
+  Height="{Binding RelativeSource={RelativeSource Mode=FindAncestor, Ancestor類型={x:類型 ContentControl}}, Path=ActualHeight, FallbackValue=600}">
+  <Grid Margin="14">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="12"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+    <TabControl Grid.Row="0">
+      <TabItem Header="概覽">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+          <StackPanel Margin="16,14,16,18">
+            <TextBlock Text="太平洋打擊 '85 - 特遣隊模式" FontSize="24" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,14"/>
+
+            <TextBlock Text="Welcome, 指揮官!" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="歐洲與太平洋戰爭已經爆發。敵對行動開始時，你駐守於日本，是盟軍第一道防線。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+
+            <TextBlock Text="你的目標" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 使用戰役點數建立一支特遣隊。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 率領這支部隊完成一系列相互連結的作戰。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 補充彈藥：部分任務前可免費執行。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 修理：部分任務前可執行，但修復損傷需要消耗點數。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 損傷、損失、修理、飛機與升級掛載都會影響戰役後續發展。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+
+            <TextBlock Text="請經常儲存遊戲！開始前若想了解更多細節，可查看其他分頁。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap"/>
+          </StackPanel>
+        </ScrollViewer>
+      </TabItem>
+
+      <TabItem Header="指揮官">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+          <StackPanel Margin="16,14,16,18">
+            <TextBlock Text="指揮官 Rules" FontSize="24" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,14"/>
+
+            <TextBlock Text="聯軍指揮" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="敵對行動爆發時，美國、日本與澳洲海軍部隊正準備在太平洋舉行大型盟軍演習。危機轉為戰爭後，這些部隊被整編進聯合指揮體系。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <TextBlock Text="你可以選擇以美國、日本或澳洲指揮官身分率領戰役。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <TextBlock Text="指揮官 nationality does not change mission rules, ship performance, aircraft performance, or combat capability." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="本國採購折扣" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5">
+              <Run Text="- 指揮官s receive a "/><Run Text="{Binding Same國家DiscountPercentText}"/><Run Text="% 點數折扣。"/>
+            </TextBlock>
+            <TextBlock Text="- 多數可用單位來自美國，因此選擇美國指揮官最具彈性。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 日本或澳洲指揮官會提高挑戰性，但不會改變任務本身。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="獎勳與晉升" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 指揮官的戰役進度會記錄在服役紀錄中。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 服役紀錄包含晉升、勳獎、總擊殺、損失、救起生還者與分數。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 選取獎章或緞帶即可閱讀完整嘉獎文。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap"/>
+          </StackPanel>
+        </ScrollViewer>
+      </TabItem>
+
+      <TabItem Header="單位目錄">
+        <Grid Margin="16,14,16,18">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="6"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="12"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="6"/>
+            <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+
+          <TextBlock Text="單位價格" FontSize="24" FontWeight="Bold" Foreground="White" TextWrapping="Wrap"/>
+          <TextBlock Grid.Row="2" Text="查看可用單位級別與點數成本。選取級別名稱可開啟單位參考資料。使用特遣隊編組器將單位加入你的特遣隊。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap"/>
+
+          <Grid Grid.Row="4" Margin="0,0,16,0">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="210"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="150"/>
+              <ColumnDefinition Width="220"/>
+              <ColumnDefinition Width="110"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="國家" Command="{Binding SortRoster價格RowsCommand}" CommandParameter="國家" Height="28" Padding="8,0" HorizontalContentAlignment="Left"/>
+            <Button Grid.Column="1" Content="級別名稱" Command="{Binding SortRoster價格RowsCommand}" CommandParameter="ClassName" Height="28" Padding="8,0" HorizontalContentAlignment="Left"/>
+            <Button Grid.Column="2" Content="分類" Command="{Binding SortRoster價格RowsCommand}" CommandParameter="分類" Height="28" Padding="8,0" HorizontalContentAlignment="Left"/>
+            <Button Grid.Column="3" Content="類型" Command="{Binding SortRoster價格RowsCommand}" CommandParameter="類型" Height="28" Padding="8,0" HorizontalContentAlignment="Left"/>
+            <Button Grid.Column="4" Content="價格" Command="{Binding SortRoster價格RowsCommand}" CommandParameter="價格" Height="28" Padding="8,0" HorizontalContentAlignment="Right"/>
+          </Grid>
+
+          <Border Grid.Row="5" Height="1" Background="#59606B" Margin="0,0,16,0"/>
+
+          <ScrollViewer Grid.Row="6" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <ItemsControl ItemsSource="{Binding Roster價格Rows}">
+              <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                  <Border BorderBrush="#253140" BorderThickness="0,0,0,1" Margin="0,0,16,0">
+                  <Grid MinHeight="34" Margin="0,2,0,2">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="210"/>
+                      <ColumnDefinition Width="*"/>
+                      <ColumnDefinition Width="150"/>
+                      <ColumnDefinition Width="220"/>
+                      <ColumnDefinition Width="110"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0">
+                      <Image Source="{Binding 國家Flag}" Width="30" Height="20" Stretch="Uniform" Margin="0,0,8,0"/>
+                      <TextBlock Text="{Binding 國家Name}" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Button Grid.Column="1"
+                            Command="{Binding OpenReferenceCommand}"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Padding="8,0"
+                            HorizontalContentAlignment="Left">
+                      <TextBlock Text="{Binding ClassName}" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap"/>
+                    </Button>
+                    <TextBlock Grid.Column="2" Text="{Binding 分類Name}" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" VerticalAlignment="Center" Margin="8,0"/>
+                    <TextBlock Grid.Column="3" Text="{Binding 類型Name}" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" VerticalAlignment="Center" Margin="8,0"/>
+                    <TextBlock Grid.Column="4" Text="{Binding 價格Text}" FontSize="15" Foreground="#D8DDE8" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Center" Margin="8,0"/>
+                  </Grid>
+                  </Border>
+                </DataTemplate>
+              </ItemsControl.ItemTemplate>
+            </ItemsControl>
+          </ScrollViewer>
+        </Grid>
+      </TabItem>
+
+      <TabItem Header="戰役規則">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+          <StackPanel Margin="16,14,16,18">
+            <TextBlock Text="戰役規則" FontSize="24" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,14"/>
+
+            <TextBlock Text="持續狀態" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 損傷、彈藥消耗與損失會在任務之間延續。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 艦艇在任務間會稍微修復損傷，但完整修理仍需消耗戰役點數。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 若可進行修理，受損艦艇可以修復，但需消耗戰役點數。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 重度受損艦艇無法修理，只能除役；輕度或中度受損艦艇可花費點數修理。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 補充彈藥僅能在特定任務間進行。任務前艦艇完成補給時，特遣隊管理器會顯示綠色「已補給」圖示。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+            <TextBlock Text="建立與管理特遣隊" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 透過戰役地圖上方的特遣隊列管理部隊。它會顯示目前點數、部隊狀態，以及任務間可用的特遣隊操作。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+			<TextBlock Text="- 在上方列對單位按右鍵，可開啟修理、飛機管理、遣散與除役等管理選項。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+
+            <TextBlock FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5">
+              <Run Text="- 從特遣隊列開啟 "/><Hyperlink Command="{Binding OpenTaskForceBuilderCommand}">特遣隊編組器</Hyperlink><Run Text="，將艦艇、潛艦、直升機與飛機加入特遣隊。"/>
+            </TextBlock>
+            <TextBlock Text="- 所選單位在確認特遣隊前不會購買。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 單位可用性可能在任務間改變。例如離開日本水域後，日本單位可能不再可用。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5">
+              <Run Text="- 使用特遣隊列修理損傷、檢查武器、更換掛載、查看熟練度並管理飛機配置。"/>
+            </TextBlock>
+            <TextBlock Text="- The 單位目錄 tab lists available unit classes and point costs." FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="特遣隊編組器可用性" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 有些任務會讓特遣隊遠離友軍基地。在海上行動時，任務間可能無法加入新單位。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 只有特遣隊編組器可用時才能加入新單位。繼續戰役，直到部隊抵達友軍基地。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 部署前的任務描述會註明任何補給或增援限制。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="戰役點數" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 已花費的點數不可退款。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="{Binding PurchaseLoadoutsRuleText}" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5">
+              <Run Text="- 從特遣隊管理器遣散單位會返還其點數價值的 "/><Run Text="{Binding DismissRefundPercentText}"/><Run Text="%。"/>
+            </TextBlock>
+            <TextBlock FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5">
+              <Run Text="- 將無法修理的重度受損單位除役，會返還其點數價值的 "/><Run Text="{Binding DecommissionRefundPercentText}"/><Run Text="%。"/>
+            </TextBlock>
+            <TextBlock Text="- 艦艇在戰鬥中損失不會返還任何點數。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 隨著戰役推進與任務完成，會獲得額外點數。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="乘員熟練度" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="單位完成任務並存活後會提升熟練度等級。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="較高熟練度會提升戰鬥效率、感測器處理速度與損害管制能力，並降低命中造成致命結果的機率。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,10"/>
+
+            <Border Width="1120" HorizontalAlignment="Center" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="1" Background="{StaticResource Brush.Window.Background}" Margin="0,0,0,14">
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="126"/>
+                  <ColumnDefinition Width="112"/>
+                  <ColumnDefinition Width="150"/>
+                  <ColumnDefinition Width="150"/>
+                  <ColumnDefinition Width="132"/>
+                  <ColumnDefinition Width="174"/>
+                  <ColumnDefinition Width="144"/>
+                  <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Row="0" Grid.Column="0" Background="{StaticResource Brush.Window.BackgroundDark}" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <TextBlock Text="熟練度" FontSize="13" FontWeight="Bold" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="1" Background="{StaticResource Brush.Window.BackgroundDark}" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <TextBlock Text="存活任務數" FontSize="13" FontWeight="Bold" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center" TextWrapping="Wrap" ToolTip="單位必須存活多少任務才能達到此熟練度等級。"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="2" Background="{StaticResource Brush.Window.BackgroundDark}" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <TextBlock Text="接觸處理" FontSize="13" FontWeight="Bold" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center" TextWrapping="Wrap" ToolTip="目標獲取、聲納目標運動分析、ESM 識別與聲學信心成長的倍率。"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="3" Background="{StaticResource Brush.Window.BackgroundDark}" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <TextBlock Text="艦體／進水／火災修復" FontSize="13" FontWeight="Bold" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center" TextWrapping="Wrap" ToolTip="進水速率修復、進水修復、結構修復與火勢修復的倍率。"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="4" Background="{StaticResource Brush.Window.BackgroundDark}" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <TextBlock Text="系統修復" FontSize="13" FontWeight="Bold" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center" TextWrapping="Wrap" ToolTip="修復受損艦艇系統的倍率。"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="5" Background="{StaticResource Brush.Window.BackgroundDark}" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <TextBlock Text="機砲攔截" FontSize="13" FontWeight="Bold" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center" TextWrapping="Wrap" ToolTip="飛機機砲對飛機／飛彈的攔截加成。"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="6" Background="{StaticResource Brush.Window.BackgroundDark}" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <TextBlock Text="重創加成" FontSize="13" FontWeight="Bold" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center" TextWrapping="Wrap" ToolTip="成功攻擊造成嚴重或立即致命結果的額外機率。"/>
+                </Border>
+                <Border Grid.Row="0" Grid.Column="7" Background="{StaticResource Brush.Window.BackgroundDark}" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,0,1">
+                  <TextBlock Text="致命命中風險" FontSize="13" FontWeight="Bold" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center" TextWrapping="Wrap" ToolTip="單位遭命中時立即遭受致命結果的機率。"/>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="0" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <Border Width="84" Padding="4,2" Background="{StaticResource Brush.CrewSkill.Green}" HorizontalAlignment="Center">
+                    <TextBlock Text="新手" FontSize="13" Foreground="#18261B" TextAlignment="Center"/>
+                  </Border>
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="0" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="1" Grid.Column="2" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="1" Grid.Column="3" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="1" Grid.Column="4" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="1" Grid.Column="5" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="+0 / +0" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="1" Grid.Column="6" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="+0%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="1" Grid.Column="7" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,0,1"><TextBlock Text="10%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+
+                <Border Grid.Row="2" Grid.Column="0" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <Border Width="84" Padding="4,2" Background="{StaticResource Brush.CrewSkill.Trained}" HorizontalAlignment="Center">
+                    <TextBlock Text="合格" FontSize="13" Foreground="#18261B" TextAlignment="Center"/>
+                  </Border>
+                </Border>
+                <Border Grid.Row="2" Grid.Column="1" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="2" Grid.Column="2" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1.5x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="2" Grid.Column="3" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1.5x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="2" Grid.Column="4" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1.25x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="2" Grid.Column="5" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="+5 / +2" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="2" Grid.Column="6" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="+0%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="2" Grid.Column="7" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,0,1"><TextBlock Text="10%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+
+                <Border Grid.Row="3" Grid.Column="0" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <Border Width="84" Padding="4,2" Background="{StaticResource Brush.CrewSkill.老練}" HorizontalAlignment="Center">
+                    <TextBlock Text="老練" FontSize="13" Foreground="#18261B" TextAlignment="Center"/>
+                  </Border>
+                </Border>
+                <Border Grid.Row="3" Grid.Column="1" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="2" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="3" Grid.Column="2" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="2x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="3" Grid.Column="3" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="2x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="3" Grid.Column="4" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1.5x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="3" Grid.Column="5" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="+10 / +3" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="3" Grid.Column="6" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="+2%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="3" Grid.Column="7" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,0,1"><TextBlock Text="8%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+
+                <Border Grid.Row="4" Grid.Column="0" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1">
+                  <Border Width="84" Padding="4,2" Background="{StaticResource Brush.CrewSkill.老兵s}" HorizontalAlignment="Center">
+                    <TextBlock Text="老兵" FontSize="13" Foreground="#18261B" TextAlignment="Center"/>
+                  </Border>
+                </Border>
+                <Border Grid.Row="4" Grid.Column="1" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="4" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="4" Grid.Column="2" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="2.5x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="4" Grid.Column="3" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="2.5x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="4" Grid.Column="4" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="1.75x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="4" Grid.Column="5" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="+15 / +4" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="4" Grid.Column="6" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,1"><TextBlock Text="+4%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="4" Grid.Column="7" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,0,1"><TextBlock Text="6%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+
+                <Border Grid.Row="5" Grid.Column="0" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,0">
+                  <Border Width="84" Padding="4,2" Background="{StaticResource Brush.CrewSkill.Ultra}" HorizontalAlignment="Center">
+                    <TextBlock Text="菁英" FontSize="13" Foreground="#18261B" TextAlignment="Center"/>
+                  </Border>
+                </Border>
+                <Border Grid.Row="5" Grid.Column="1" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,0"><TextBlock Text="7" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="5" Grid.Column="2" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,0"><TextBlock Text="3x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="5" Grid.Column="3" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,0"><TextBlock Text="3x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="5" Grid.Column="4" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,0"><TextBlock Text="2x" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="5" Grid.Column="5" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,0"><TextBlock Text="+20 / +5" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="5" Grid.Column="6" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,1,0"><TextBlock Text="+6%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+                <Border Grid.Row="5" Grid.Column="7" Padding="8,6" BorderBrush="{StaticResource Brush.Glyph.Normal}" BorderThickness="0,0,0,0"><TextBlock Text="5%" FontSize="14" Foreground="{StaticResource Brush.Foreground.Normal}" TextAlignment="Center"/></Border>
+              </Grid>
+            </Border>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="飛機與潛艦" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 在特遣隊編組器購買的艦艇會免費包含其航空隊，且飛機會自動分配至該艦。若飛機損失，替換機必須另行購買。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 直升機在戰役開始時即可使用。每艘艦會在特遣隊編組器中顯示支援的飛機。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 戰役開始時無法購買固定翼飛機，但稍後會開放。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 已購買固定翼飛機會在支援此功能的任務中從空軍基地操作。若沒有可用空軍基地，固定翼飛機不會部署，將保留於後備。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 部分任務包含空中任務槽，可讓飛機在任務開始時已在空中。選取任務後開啟「準備空軍基地」，並在空中任務分頁中指派符合資格且尚未配置的飛機。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 每一列空中任務代表一個任務機隊。較大的機隊必須使用相同機型；若可用飛機不足，也可未滿編起飛。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 潛艦獨立於你的特遣隊運作。它們會出現在獨立但相互關聯的選擇性支線任務中；完成後可帶來收益，但不推進主線戰役。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="旗艦" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 特遣隊部署前至少需要一艘水面艦。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 特遣隊第一艘艦預設為旗艦。你可以在特遣隊管理器中指定任意艦艇為旗艦。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 旗艦必須在每次任務中存活。特遣隊其他單位可以損失，但旗艦若被摧毀，任務即失敗。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14"/>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="搜救" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 艦艇沉沒或飛機遭擊落時可能出現救生筏。將直升機或艦艇移近救生筏即可救回生還者。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,14">
+              <Run Text="- 每救回 "/><Run Text="{Binding CSARPointModifierText}"/><Run Text=" 名生還者，任務結束時可獲得 1 點戰役點數；未滿一組不會給予額外點數。"/>
+            </TextBlock>
+            <Border Height="1" Background="{StaticResource Brush.Glyph.Normal}" Opacity="0.45" Margin="0,0,0,14"/>
+
+            <TextBlock Text="任務結果" FontSize="17" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,0,0,6"/>
+            <TextBlock Text="- 任務失敗不會損傷你的特遣隊，也不會套用額外懲罰。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 任務失敗後必須重新遊玩並成功完成才能推進。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 已完成任務可使用當時建立的原特遣隊重新遊玩。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap" Margin="0,0,0,5"/>
+            <TextBlock Text="- 完成戰役後，所有任務都會解鎖，可使用你配置的任何特遣隊遊玩。" FontSize="15" Foreground="#D8DDE8" TextWrapping="Wrap"/>
+          </StackPanel>
+        </ScrollViewer>
+      </TabItem>
+    </TabControl>
+
+    <Button Grid.Row="2"
+            HorizontalAlignment="Right"
+            Width="110"
+            Height="32"
+            Content="{Binding Path=LanguageDictionary[genericskip], Source={StaticResource LanguageResourceInterface}, FallbackValue='Skip'}"
+            Command="{Binding CloseWindowCommand}"/>
+  </Grid>
+</Page>

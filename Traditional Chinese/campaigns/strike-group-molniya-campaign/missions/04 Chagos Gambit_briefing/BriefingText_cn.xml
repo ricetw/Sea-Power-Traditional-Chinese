@@ -1,0 +1,60 @@
+﻿<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="閃電打擊群指揮官"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="閃電打擊群所有船隻"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="查戈斯群島行動"/>
+    <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="1985年7月15日"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	執行訊息
+	<LineBreak/>
+    <LineBreak/>
+	致閃電打擊群全體官兵：我已收到訊息，美國人已派遣企業號航艦戰鬥群前來獵殺我們。僅此一點對蘇聯而言即是巨大的勝利！這意味著我們這支偏師已重創了北約，導致他們不得不調動一艘宝貴的航艦來搜寻我們。
+	<LineBreak/>
+    <LineBreak/>
+	我們繼續生存的可能性取決於機動的嚴密性和命令執行的準確性。艦隊總部已與中立國印度達成協議，為我們提供庇護，但此行需要穿越印度洋中部，我們很可能在那裡暴露行踪。一旦被發現，我們就必須全力出擊！
+    <LineBreak/>
+    <LineBreak/>
+	情報顯示企業號航艦的燃料和航空物資水平較低，並且已派出卡姆登號前往迪戈加西亞島以西與後勤單位會合。我們將利用此機會擊沉此補給艦。
+	<LineBreak/>
+	<LineBreak/>
+	美軍的慣例是用驅逐艦和S-3艦載機保護海上補給群。我們也應當預料到，在行踪暴露的情況下，他們在迪戈加西亞島的基地可能會派出飛機。K-184號飛彈潛艇上的同志們將與我們同行，這艘潛艇將暫時隶属於我們的部隊。
+	<LineBreak/>
+	<LineBreak/>
+	我們將找到並摧毀卡姆登號並且在美國航艦反應之前脫離接触。成功的行動將為我們爭取時間，前往印度落腳，以圖來日再戰！
+	<LineBreak/>
+    <LineBreak/>
+	祝你們好運，同志們。
+	<LineBreak/>
+    <LineBreak/>
+	訊息結束
+	<LineBreak/>
+	/署名/<Run Text="{Binding DataSource.PersistentData[CommanderName_cn]}"/>
+	<LineBreak/>
+	<LineBreak/>
+	絕密
+	<LineBreak/>
+	閱後銷毀
+    </TextBlock>
+</Grid>

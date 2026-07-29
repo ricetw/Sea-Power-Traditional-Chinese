@@ -1,47 +1,35 @@
 .agents
 .vscode
-original/**/*_cn*.*
-original/**/*_de*.*
-original/**/*_fr*.*
-original/**/*_ja*.*
-original/**/*_ko*.*
-original/**/*_ru*.*
-original/**/*_es*.*
-original/aircraft/*
-original/ammunition/*
-original/animations/*
-original/audio/*
-original/biologic/*
-original/campaigns/*
-original/clouds/*
-original/documentation/*
-original/effects/*
-original/formations/*
-original/land_units/*
-original/language_cn/*
-original/language_de/*
-original/language_es/*
-original/language_fr/*
-original/language_ko/*
-original/language_ru/*
-original/reference/*
-original/scenery/*
-original/systems/*
-original/templates/*
-original/terrain/*
-original/ui/*
-original/vessels/*
-original/_info.ini
-original/camera.ini
-original/clouds.ini
-original/config.ini
-original/controls.ini
-original/counter_icons.ini
-original/credits.asset
-original/credits.xml
-original/environment.ini
-original/hash.dat
-original/InstantActionConfig.ini
-original/nations_reference.ini
 # Large video assets are kept outside Git.
+*.png
+*.jpg
 *.mp4
+*.unitgroup
+
+# Ignore all original assets except for the ones we want to keep in Git.
+original/**/*_cn.*
+original/**/*_de.*
+original/**/*_fr.*
+original/**/*_ja.*
+original/**/*_ko.*
+original/**/*_ru.*
+original/**/*_es.*
+original/**/*_vn.*
+# original/campaigns
+original/campaigns/campaign-proto-1
+original/campaigns/linear-campaign-proto-1
+original/campaigns/pacific-strike-task-force/art/de
+original/campaigns/pacific-strike-task-force/art/ja
+original/campaigns/pacific-strike-task-force/art/medals
+original/campaigns/pacific-strike-task-force/art/ribbons
+original/campaigns/pacific-strike-task-force/art/ru
+original/campaigns/pacific-strike-task-force/art/*.png
+# original/campaigns/strike-group-molniya-campaign/art
+original/campaigns/weather
+
+# Test
+# Traditional Chinese/campaigns/pacific-strike-task-force
+
+# Campaign root shared map/navigation data; not translation targets.
+original/campaigns/*.ini
+Traditional Chinese/campaigns/*.ini

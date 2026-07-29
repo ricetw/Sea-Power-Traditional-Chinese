@@ -1,0 +1,155 @@
+﻿<!-- Campaign event template for standard USN-style "daily intentions message" (DIM) - formatting taken from real world examples -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.Column="0" Text="海軍電文" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="*******機　密*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+			<TextBlock Grid.Row="0" Grid.Column="2" Text="海軍部" Margin="0" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+
+		</Grid>
+
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+		<Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="16">
+					立即<LineBreak/>
+					O 082100Z AUG 85
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 2202100"/>
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="發自"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="CTF 77 DARWIN NT AU"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="致"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16">
+					<Run Text="指揮官"/>
+					<Run Text="{Binding DataSource.PersistentData[PlayerTaskForceName], Converter={StaticResource UppercaseConverter}}"/>
+					<Run Text="DARWIN NT AU"/>
+				</TextBlock>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="副知"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="CINCPACFLT PEARL HARBOR HI"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="COMAUSFLT CANBERRA ACT AU"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="HQ AIR COMMAND RAAF GLENBROOK NSW AU"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="主旨"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="情報摘要 08/1200Z - 09/1200Z"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					機密
+					<LineBreak/>
+					電文分隔
+					<LineBreak/>
+					<LineBreak/>
+					1.（機密）摘要：東南亞盟軍已撤回達爾文，作為主要盟軍集結基地。敵軍正企圖封閉通往爪哇海、南海與東印度洋的各海峽，以孤立新加坡並切斷剩餘盟軍海上交通線。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					2.（機密）敵情：
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 蘇聯突擊隊利用印尼指揮體系混亂之機登陸峇里，佔領登巴薩機場及鄰近支援設施。
+					<LineBreak/>
+					- 敵方水面、潛艦與航空單位持續偵察巽他、龍目與翁拜／韋塔進出通道。
+					<LineBreak/>
+					- 基洛夫水面群約兩週前離開金蘭灣後，曾間歇性被偵測到在印度洋某處活動。目前航向與意圖不明。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3.（機密）友軍狀況：
+				</TextBlock>
+				<TextBlock Grid.Row="20" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 第 77 特遣隊自新加坡進出通道撤出並於達爾文重整後，仍具戰鬥效能。
+					<LineBreak/>
+					- 第 9 艦載機聯隊部分兵力在第 77 特遣隊司令部協調下，以達爾文為岸基執行任務。
+					<LineBreak/>
+					- 新加坡與馬來西亞遭嚴重壓制，其空軍／海軍兵力大多已被摧毀。
+					<LineBreak/>
+					- 印尼仍陷動盪，總統失蹤。國務院認為蘇聯正試圖向其提出中立交易。
+					<LineBreak/>
+					- 小鷹號於橫須賀觸雷受損後仍無法作戰，預計最晚於 1 月 1 日恢復行動。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="22" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4.（機密）評估：敵軍控制巴拉望、峇里與印尼各海峽，使華約部隊實質掌握南海與印度洋之間的主要通道。由於印度允許蘇聯設置基地並進行支援活動、東南亞兵力遭壓制、印尼政治癱瘓，蘇聯單位可在金蘭灣、印度洋集結區與澳洲進出通道之間移動，所受干擾有限。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					署名：第 77 特遣隊司令部 N2
+					<LineBreak/>
+					<LineBreak/>
+					電文分隔
+					<LineBreak/>
+					機密 依原機關決定解密
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

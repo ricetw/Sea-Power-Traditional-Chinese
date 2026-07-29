@@ -1,0 +1,57 @@
+﻿<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發件："/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="閃電打擊群指揮官"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="收件："/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="閃電打擊群所有船隻"/>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主題："/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="再補給行動"/>
+    <TextBlock Grid.Row="7" Grid.Column="4" FontSize="{StaticResource Font.Size.Header}" Text="1985年7月5日"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	執行訊息
+	<LineBreak/>
+    <LineBreak/>
+	我必須祝贺我方所有艦艇、船員和飛行員在模裡西斯作戰中取得的輝煌戰果。我們正成為北約的一根眼中釘。
+	<LineBreak/>
+    <LineBreak/>
+	路易港附近的戰鬥極大地消耗了我們的彈藥和燃料。我們現在必須前往南方，與商船隊的同志會合並進行補給。我已選擇克羅澤群島的一处偏遠錨地，届時我方的三艘偽裝商船將攜帶燃料、給養、航空物資和飛彈彈藥與我們會合。
+    <LineBreak/>
+    <LineBreak/>
+	截獲的通訊表明敵方可能已經察覺到我們的意圖。我們現在知道南非已與北約組成聯合部隊，我們可能會遭遇他們的柴電潛艇。我方偵察船電流表號也將與我們會合，其艦載信號处理設備將成為重要的情報來源，我們必須確保其安全。
+	<LineBreak/>
+	<LineBreak/>
+	我們將抵達錨地並清理此區域，進行補給，之後繼續北上，再次獵殺敵人。
+	<LineBreak/>
+    <LineBreak/>
+	祝你們好運，同志們。
+	<LineBreak/>
+    <LineBreak/>
+	訊息結束
+	<LineBreak/>
+	/署名/<Run Text="{Binding DataSource.PersistentData[CommanderName_cn]}"/>
+	<LineBreak/>
+	<LineBreak/>
+	絕密
+	<LineBreak/>
+	閱後銷毀
+    </TextBlock>
+</Grid>

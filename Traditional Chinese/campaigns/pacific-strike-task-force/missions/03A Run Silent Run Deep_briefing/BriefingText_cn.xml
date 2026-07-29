@@ -1,0 +1,56 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		特急
+		<LineBreak/>
+		Z 080115Z JUL 85
+		</TextBlock>
+		<TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+		<TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMSUBPAC"/>
+		<TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+		<TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CO USS HOUSTON SSN-713"/>
+		<TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+		<TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RETASKING - CONTACT REPORT"/>
+		<TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）國家技術手段已在南沙群島傑克遜環礁定位一艘蘇聯 DON 級潛艦補給艦。該艦正在為本區 KILO、ROMEO 與 TANGO 級柴電潛艦部隊補給，這些潛艦支援敵軍入侵巴拉望。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）中止金蘭灣近岸偵察，以最佳航速前往傑克遜環礁。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）該補給艦由包含中國獵潛艦在內的小型護航兵力保護。上次衛星通過時發現 1 艘 UDALOY 級巡防艦，但其可能已離開本區。注意：本區淺水地形危險，菲律賓海軍警告布雷作業正在進行中。雷區位置將儘快傳送給你。
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）以魚雷或飛彈攻擊潛艦補給艦與所有遭遇的敵方柴電潛艦。若遭遇 UDALOY 級巡防艦，除 DON 級補給艦外，優先摧毀該艦。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）若戰術情況允許，回報沉沒位置，隨後經巴拉望航道脫離至澳洲達爾文。祝好運，獵殺順利。太平洋潛艦部隊司令部發。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		DECL OADR BT
+	</TextBlock>
+</Grid>

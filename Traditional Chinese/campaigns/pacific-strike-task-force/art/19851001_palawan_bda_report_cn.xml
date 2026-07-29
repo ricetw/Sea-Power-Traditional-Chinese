@@ -1,0 +1,108 @@
+<!-- Pacific Strike battle damage assessment event: naval-message paper format. -->
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+    <Border.Effect>
+      <DropShadowEffect />
+    </Border.Effect>
+    <Border.Background>
+      <ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+    </Border.Background>
+
+    <StackPanel Orientation="Vertical">
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="3*"/>
+          <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0" Text="海軍電文" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Left"/>
+        <TextBlock Grid.Column="1" Text="*******機　密*******" Margin="40,0,40,0" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock Grid.Column="2" Text="海軍部" FontFamily="Arial Narrow Bold" FontSize="26" FontWeight="Bold" TextAlignment="Right"/>
+      </Grid>
+
+      <Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,1"/>
+      <Rectangle HorizontalAlignment="Stretch" Height="1" Fill="Black" Margin="0,0,0,10"/>
+
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="10"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" FontSize="16">
+          立即<LineBreak/>
+          O 011200Z OCT 85
+        </TextBlock>
+
+        <TextBlock Grid.Row="0" Grid.Column="3" FontSize="16" Text="ZYUW RUHGOAA0777 2741200"/>
+      </Grid>
+
+      <Grid Margin="0,18,0,0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="10"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="16" Text="發自"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" FontSize="16" Text="CTF 77 公主港 RP"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" FontSize="16" Text="致"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" FontSize="16" Text="CINCPACFLT PEARL HARBOR HI"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" FontSize="16" Text="副知"/>
+        <TextBlock Grid.Row="2" Grid.Column="2" FontSize="16">
+          指揮官 17 MAU ASHORE<LineBreak/>
+          COMUSPHIL MANILA PI<LineBreak/>
+          JCS WASHINGTON DC
+        </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="主旨"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="BDA REPORT - 公主港 / 巴拉望 FOLLOW-ON OPS"/>
+      </Grid>
+
+      <TextBlock TextWrapping="Wrap" FontSize="16" Margin="0,24,0,0">
+        機密
+        <LineBreak/>
+        電文分隔
+        <LineBreak/><LineBreak/>
+        參考：
+        <LineBreak/><LineBreak/>
+        A. 第 77 特遣隊機組任務後簡報與打擊後照片判讀。
+        <LineBreak/>
+        B. 第 17 陸戰兩棲部隊態勢報告 011030Z OCT 85。
+        <LineBreak/>
+        C. 菲律賓司令部巴拉望地面報告 011045Z OCT 85。
+        <LineBreak/><LineBreak/>
+        1.（機密）摘要：「挑戰者」行動已將第 17 陸戰兩棲部隊與菲律賓部隊送上公主港岸上。登陸灘頭已確保。友軍控制城市部分區域，並正清理內陸路線。本報告為初步內容，依據參考 A 至 C 編成。
+        <LineBreak/><LineBreak/>
+        2.（機密）戰損評估 - 公主港：安東尼奧・包蒂斯塔空軍基地跑道已遭炸出彈坑。燃料與儲存區受損。近區進場路線內已知雷達、高射砲與岸基飛彈陣地已被摧毀、受損或迫使轉移。港口設施受損，但在工兵與潛水員清理後，可能仍可支援有限後勤。
+        <LineBreak/><LineBreak/>
+        3.（機密）後續行動：第 17 陸戰兩棲部隊正擴大灘頭堡，並清除城市外圍敵軍殘存據點。預期將遭遇地雷、詭雷與留置飛彈小組。在跑道與燃料系統修復前，盟軍無法自巴拉望進行固定翼機作戰。
+        <LineBreak/><LineBreak/>
+        4.（機密）奎松／西巴拉望：敵軍仍在巴拉望西緣奎松附近活動。該地尚未被「挑戰者」行動削弱。目前評估其為指揮與補給節點，可能具備接收增援運輸的能力。
+        <LineBreak/><LineBreak/>
+        5.（機密）評估：公主港已被奪取，但巴拉望尚未安全。若奎松仍保持開放，敵方指揮官仍可自海上增援。第 77 特遣隊應在有限再武裝條件下規劃後續掃蕩，並將任何駛向巴拉望西部的船隊視為緊急威脅。
+        <LineBreak/><LineBreak/>
+        署名：情報參謀
+        <LineBreak/>
+        N2, CTF 77
+        <LineBreak/><LineBreak/>
+        電文分隔
+        <LineBreak/>
+        機密 依原機關決定解密
+      </TextBlock>
+    </StackPanel>
+  </Border>
+</ScrollViewer>

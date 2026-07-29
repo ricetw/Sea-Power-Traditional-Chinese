@@ -1,0 +1,65 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" Text="1985-8-18" FontSize="{StaticResource Font.Size.Header}"/-->
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		特急
+		<LineBreak/>
+		Z 270010Z JUN 85
+	</TextBlock>
+    <!--TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Right" Text="05:00Z (06:00L)" FontSize="{StaticResource Font.Size.Header}"/-->
+
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CTF 77 YOKOSUKA JA"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="ALLIED UNITS NAHA, OKINAWA, JA"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="副知"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		COMSEVENTHFLT PEARL HARBOR HI<LineBreak/>
+		CINCPACFLT PEARL HARBOR HI<LineBreak/>
+		COMUSJAPAN YOKOTA AB
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="緊急重新指派 - 沖繩遭受攻擊"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）美軍與盟軍在整個西太平洋正遭受蘇聯、中國與北韓部隊攻擊。總統已命令我方立即開始反擊。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）國家技術情報來源顯示，多支敵方水面群正向沖繩移動。情報判斷其中一支為蘇聯突擊隊，攜帶輕裝甲搭乘日本籍汽車運輸船 M/V IBISHU MARU NO. 18（見參考 A）。另一支為中國海軍打擊群，並有蘇聯 KANIN 級驅逐艦同行，顯然負責防空。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）接管那霸盟軍兵力。美國空軍 E-3A「Darkstar」將在嘉手納空軍基地上空提供空中與水面態勢，日本海上自衛隊 P-3C 將報到支援目標指示與海上打擊。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）訊號情報回報敵方 AGI 情報拖網船正在本區某處活動。中國空軍單位可能出擊掩護突擊隊，但預期沒有潛艦威脅。
+		<LineBreak/>
+		<LineBreak/>
+		6.（機密）摧毀 M/V IBISHU MARU NO.18 上的突擊隊，以及中國海軍水面打擊群。祝好運，獵殺順利。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		DECL OADR BT
+	  </TextBlock>
+</Grid>

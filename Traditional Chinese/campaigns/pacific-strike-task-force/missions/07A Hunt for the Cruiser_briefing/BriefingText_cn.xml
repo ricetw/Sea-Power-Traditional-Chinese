@@ -1,0 +1,62 @@
+﻿<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+        特急
+        <LineBreak/>
+        Z 260715Z AUG 85
+    </TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="MARITIME HQ"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+        <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="HMAS ORION S61"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="副知"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+        HMAS PLATYPUS<LineBreak/>
+        COMAUSFLT<LineBreak/>
+        CINCPACFLT<LineBreak/>
+        COMSUBPAC
+        </TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+        <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CONTACT REPORT - SOUTH CHINA SEA"/>
+        <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+        機密 - 可向美國、日本發布
+        <LineBreak/>
+        <LineBreak/>
+        1.（機密）衛星偵察已辨識出一支以光榮級巡洋艦為核心的敵方水面群，正離開金蘭灣，以航向 140、航速 18 向東南航行。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）該群正在護送運輸單位前往巴拉望的中國陣地。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）以最佳航速前往攔截此兵力。
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）優先目標為光榮級巡洋艦，其次為運輸單位。若戰術情況允許，擊沉所有遭遇敵軍。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）回報沉沒位置並等待後續命令。
+        <LineBreak/>
+        <LineBreak/>
+        機密 - 可向美國、日本發布
+    </TextBlock>
+</Grid>

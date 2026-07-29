@@ -1,0 +1,146 @@
+﻿<!-- Campaign event template for JCS-style message traffic - header follows RichMissionMessages USAJCS format -->
+
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SeapowerUI">
+
+	<Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="45">
+		<Border.Effect>
+			<DropShadowEffect />
+		</Border.Effect>
+		<Border.Background>
+			<ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+		</Border.Background>
+
+        <StackPanel Orientation="Vertical">
+
+		<Grid
+		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Grid.Row="0" Grid.ColumnSpan="3" Margin="0" FontFamily="Roboto Mono" FontSize="14" TextAlignment="Center" HorizontalAlignment="Center">
+				國防部<LineBreak/>
+				參謀長聯席會議訊息中心
+			</TextBlock>
+
+		</Grid>
+
+			<Grid
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+			<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="10"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<TextBlock Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" FontSize="16">
+					特急<LineBreak/>
+					Z 091430Z JUL 85
+				</TextBlock>
+
+				<TextBlock Grid.Row="1" Grid.Column="3" FontSize="16" Text="ZYUW RUEKJCS4169 1901430"/>
+
+				<TextBlock Grid.Row="3" Grid.Column="0" FontSize="16" Text="發自"/>
+				<TextBlock Grid.Row="3" Grid.Column="2" FontSize="16" Text="JCS WASHINGTON DC"/>
+				<TextBlock Grid.Row="4" Grid.Column="0" FontSize="16" Text="致"/>
+				<TextBlock Grid.Row="4" Grid.Column="2" FontSize="16" Text="THE WHITE HOUSE WASHINGTON DC//SITROOM//"/>
+				<TextBlock Grid.Row="11" Grid.Column="0" FontSize="16" Text="副知"/>
+				<TextBlock Grid.Row="11" Grid.Column="2" FontSize="16" Text="SECDEF WASHINGTON DC"/>
+				<TextBlock Grid.Row="12" Grid.Column="2" FontSize="16" Text="SECSTATE WASHINGTON DC"/>
+				<TextBlock Grid.Row="13" Grid.Column="2" FontSize="16" Text="DCI CIA WASHINGTON DC"/>
+				<TextBlock Grid.Row="14" Grid.Column="0" FontSize="16" Text="主旨"/>
+				<TextBlock Grid.Row="14" Grid.Column="2" FontSize="16" Text="JCS 態勢報告 001 - 巴拉望入侵／戰略影響"/>
+
+				<TextBlock Grid.Row="15" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					<LineBreak/>
+					機密
+					<LineBreak/>
+					電文分隔
+					<LineBreak/>
+					<LineBreak/>
+					1.（機密）摘要：初步報告顯示，蘇聯部隊已將一支大規模中國突擊兵力送上海灘，登陸菲律賓西部巴拉望島。當地防線迅速被壓垮。敵方地面單位目前控制巴拉望南端，並正向公主港附近設施推進以鞏固控制。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="16" Grid.ColumnSpan="4" FontSize="16" TextWrapping="Wrap">
+					2.（機密）敵軍行動：來自金蘭灣的蘇聯重型兩棲運輸與攻擊機支援此次突擊，並將中國部隊大量送上岸。後續梯隊可能包含彈藥、工兵、燃料與防空裝備，目的在穩固永久灘頭堡。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="17" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					3.（機密）海上威脅：
+				</TextBlock>
+				<TextBlock Grid.Row="18" Grid.ColumnSpan="4" TextWrapping="Wrap" Margin="20,0,0,0">
+					- 已通報沿岸反艦飛彈攻擊企圖通過巴拉巴克海峽的美國與菲律賓單位。
+					<LineBreak/>
+					- 評估中國與蘇聯潛艦正在巴拉巴克海峽及鄰近進出通道活動。
+					<LineBreak/>
+					- 評估敵軍已在巴拉巴克海峽與巴拉望航道關鍵進出路線布雷。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="19" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					4.（機密）友軍／區域狀況：當前區域可用盟軍兵力不足以逆轉巴拉望登陸。針對馬來西亞與菲律賓的猛烈空襲已壓制區域打擊能力，使當地沒有可靠空中選項可對抗入侵兵力。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="21" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					5.（機密）政策／兵力態勢：盟軍海上兵力經南海前往新加坡的行動，現已判定若無承受遭孤立重大風險即無法支撐。參謀長聯席會議建議立即將可用美軍與盟軍兵力重新集中於澳洲達爾文，同時維持對菲律賓抵抗力量的支援。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="23" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					6.（機密）評估：敵軍控制巴拉望將大幅複雜化美軍在東南亞的作戰，並使進入南海的美軍單位面臨遭切斷風險。若印尼由癱瘓轉向支援蘇聯，南方出口可能迅速關閉，使大量兵力被困於後勤支援之外，並暴露在金蘭灣蘇聯轟炸機航程內。後續態勢報告將每 12 小時發布。
+					<LineBreak/>
+				</TextBlock>
+				<TextBlock Grid.Row="25" Grid.ColumnSpan="4" TextWrapping="Wrap">
+					國家軍事指揮中心
+					<LineBreak/>
+					<LineBreak/>
+					電文分隔
+					<LineBreak/>
+					機密 依原機關決定解密
+					<LineBreak/>
+				</TextBlock>
+			</Grid>
+        </StackPanel>
+    </Border>
+</ScrollViewer>

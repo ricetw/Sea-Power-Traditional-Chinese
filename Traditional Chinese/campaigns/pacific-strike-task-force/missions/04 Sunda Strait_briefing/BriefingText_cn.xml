@@ -1,0 +1,65 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+	特急
+	<LineBreak/>
+	Z 150130Z JUL 85
+	</TextBlock>
+    <TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+    <TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CTF 77"/>
+    <TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+    <TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER {TaskForceName}"/>
+	<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="副知"/>
+    <TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		CINCPACFLT PEARL HARBOR HI<LineBreak/>
+		HQ AIR COMMAND RAAF GLENBROOK NSW AU
+	</TextBlock>
+    <TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+    <TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="RETASKING - MOVEMENT ORDERS TO DARWIN"/>
+    <TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+	  機密
+	  <LineBreak/>
+      <LineBreak/>
+	  1.（機密）6 月 25 日至 7 月 14 日間，新加坡與印尼遭敵方攻擊嚴重壓制，其狀況不明。東南亞所有美軍奉命撤至澳洲達爾文的新後撤陣地。
+      <LineBreak/>
+      <LineBreak/>
+      2.（機密）{TaskForceName} 所有單位以最佳航速前往達爾文。經巽他海峽離開爪哇海。
+      <LineBreak/>
+      <LineBreak/>
+	  3.（機密）油輪 SEALIFT CARIBBEAN SEA 將於雅加達與你會合。
+	  <LineBreak/>
+      <LineBreak/>
+	  4.（機密）據報敵方水面兵力正以最大航速南下，可能意圖封閉巽他海峽，阻止盟軍通行。
+	  <LineBreak/>
+      <LineBreak/>
+	  5.（機密）敵前進兵力與潛艦可能正在巽他海峽周邊活動。
+	  <LineBreak/>
+      <LineBreak/>
+	  6.（機密）一旦脫離海峽，澳洲皇家空軍 F-111 編隊將報到執行水面戰鬥空中巡邏，並護送你前往達爾文。祝好運。
+	  <LineBreak/>
+      <LineBreak/>
+	  機密
+	  <LineBreak/>
+	  DECL OADR BT
+	  </TextBlock>
+
+</Grid>

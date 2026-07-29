@@ -1,0 +1,78 @@
+<ScrollViewer xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="820" TextElement.FontFamily="Courier New" TextElement.Foreground="Black" TextElement.FontSize="16" Padding="54">
+    <Border.Effect>
+      <DropShadowEffect />
+    </Border.Effect>
+    <Border.Background>
+      <ImageBrush ImageSource="{Binding Assets[bkg_paper]}" Stretch="UniformToFill"/>
+    </Border.Background>
+
+    <StackPanel Orientation="Vertical">
+      <Grid Margin="0,0,0,22">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Text="機密" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" Text="S/S 8528428" FontWeight="Bold"/>
+      </Grid>
+
+      <TextBlock TextAlignment="Center" FontFamily="Times New Roman" FontSize="23" FontWeight="Bold" Text="United States Department of State"/>
+      <TextBlock TextAlignment="Center" FontFamily="Times New Roman" FontSize="18" Text="Washington, D.C. 20520"/>
+      <TextBlock TextAlignment="Right" Margin="0,15,0,0" Text="August 28, 1985"/>
+
+      <Grid Margin="0,15,0,0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="200"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="MEMORANDUM FOR:"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="MR. ROBERT C. McFARLANE"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="THE WHITE HOUSE"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="0,18,0,0" Text="FROM:"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Margin="0,18,0,0" Text="喬治・P・舒茲"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Margin="0,18,0,0" Text="主旨ECT:"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" Margin="0,18,0,0" Text="印尼重新參戰"/>
+      </Grid>
+      <TextBlock TextWrapping="Wrap" FontSize="16">
+		<LineBreak/>
+		印尼已以積極盟友身分重新參戰。  此決定是在盟軍水面特遣隊於 8 月 26 日爪哇海行動中，排除雅加達北方主要蘇聯水面威脅後作成。  蘇哈托總統已在雅加達重新現身，並正恢復對印尼政府的控制。
+		<LineBreak/>
+		<LineBreak/>
+		敵軍奪取巴拉望，是在盟軍於西太平洋各處部署失衡時發動的大膽行動。  解放軍部隊目前掌握一處前進據點，威脅菲律賓西部通航，並阻絕我方進入南海。
+		<LineBreak/>
+		<LineBreak/>
+		自 7 月初以來，重新整合東南亞態勢的需求已降低盟軍行動彈性。  華約的積極行動迫使我方在原始計畫之外的戰區消耗稀缺船運能量、燃料庫存與彈藥。
+		<LineBreak/>
+		<LineBreak/>
+		隨著印尼重返戰爭，美軍可開始向北轉移。  下一階段攻勢將指向巴拉望島上的中國堡壘。  馬來西亞已提供北婆羅洲山打根，作為巴拉望行動的數個盟軍集結區之一。
+		<LineBreak/>
+		<LineBreak/>
+		盟軍最高司令部已命令作戰部隊不得晚於 1985 年 11 月 1 日收復巴拉望。  關於印尼，國務院建議總統私下歡迎印尼的決定。  公開措辭應強調區域主權，不應暗示華盛頓指示雅加達重返戰爭。
+		<LineBreak/>
+		<LineBreak/>
+		聯合國管道回報，印尼中央權威恢復過程中出現侵犯人權情事，尤其針對當地華裔族群。  基於戰略背景，國務院建議將此議題延至戰後安排處理。
+      </TextBlock>
+
+      <TextBlock TextWrapping="Wrap" FontSize="16" LineHeight="26" Margin="0,34,0,0">
+        喬治・P・舒茲
+		<LineBreak/>
+		<LineBreak/>
+		副本：副總統；國防部長；參謀長聯席會議主席
+		<LineBreak/>
+		<LineBreak/>
+		解密：依原機關決定
+	  </TextBlock>
+      <TextBlock TextAlignment="Center" Margin="0,22,0,0" FontWeight="Bold" Text="機密"/>
+    </StackPanel>
+  </Border>
+</ScrollViewer>

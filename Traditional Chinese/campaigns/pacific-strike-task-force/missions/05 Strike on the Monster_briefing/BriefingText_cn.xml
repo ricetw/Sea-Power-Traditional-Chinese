@@ -1,0 +1,66 @@
+﻿<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="10"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="10"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+	<TextBlock Grid.Row="1" Grid.ColumnSpan="4" HorizontalAlignment="Left" FontSize="{StaticResource Font.Size.Header}">
+		立即
+		<LineBreak/>
+		O 110000Z AUG 85
+		</TextBlock>
+		<TextBlock Grid.Row="3" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="發自"/>
+		<TextBlock Grid.Row="3" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="CTF 77"/>
+		<TextBlock Grid.Row="4" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="致"/>
+		<TextBlock Grid.Row="4" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="COMMANDER {TaskForceName} DARWIN NT AU"/>
+		<TextBlock Grid.Row="5" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="副知"/>
+		<TextBlock Grid.Row="5" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}">
+		CINCPACFLT PEARL HARBOR HI<LineBreak/>
+		HQ AIR COMMAND RAAF GLENBROOK NSW AU
+		</TextBlock>
+		<TextBlock Grid.Row="7" Grid.Column="0" FontSize="{StaticResource Font.Size.Header}" Text="主旨"/>
+		<TextBlock Grid.Row="7" Grid.Column="2" FontSize="{StaticResource Font.Size.Header}" Text="OPERATION PLAN - ABLE LIGHTNING"/>
+		<TextBlock Grid.Row="9" Grid.ColumnSpan="4" FontSize="{StaticResource Font.Size.Header}" TextWrapping="Wrap">
+		機密
+		<LineBreak/>
+		<LineBreak/>
+		1.（機密）態勢：盟軍已在達爾文重新集結。印尼兵力因敵方行動遭嚴重削弱，蘇聯遠征兵力已佔領峇里機場。昨日澳洲海岸觀察員回報，基洛夫水面群向南通過龍目海峽，後續影像顯示基洛夫正向東朝澳洲移動。
+		<LineBreak/>
+		<LineBreak/>
+		2.（機密）任務：{TaskForceName} 指揮官將接管達爾文所有可用盟軍單位，定位並摧毀基洛夫群。
+		<LineBreak/>
+		<LineBreak/>
+		3.（機密）執行：自達爾文向西航行，水面兵力分散並保持電磁管制以避免遭識別。定位基洛夫後，以你指揮下的艦艇與航空單位實施協同打擊。運用戰鬥空中巡邏阻止敵方空中偵察單位定位我方兵力。
+		<LineBreak/>
+		<LineBreak/>
+		4.（機密）敵軍戰鬥序列：基洛夫群包含 2 艘 KRIVAK 或 KRIVAK-II 級巡防艦、1 艘 KYNDA 級巡洋艦與 1 艘 UDALOY 級飛彈驅逐艦。注意：UDALOY 搭載性能優異的 SA-N-9 防空飛彈，對魚叉飛彈高度有效。預期敵軍會自峇里戰鬥機跑道出動戰鬥空中巡邏與偵察飛行。澳洲方面回報蘇聯部隊正使用 Badger 轟炸機進行長程低空偵察。
+		<LineBreak/>
+		<LineBreak/>
+		5.（機密）盟軍兵力：有限的盟軍航空兵力將由西澳布魯姆機場起飛。注意：我方最後一架 Hawkeye 於 8 月 8 日在東帝汶上空失蹤。目前無法提供預警機覆蓋。我方戰鬥機必須主動搜索並識別敵方空中偵察。
+		<LineBreak/>
+		<LineBreak/>
+		6.（機密）備註：太平洋司令部明白這是艱難任務，水面單位風險極高。若成功，本行動將移除蘇聯太平洋艦隊一支主要水面戰力，並保護我方達爾文堡壘免受飛彈攻擊。祝好運，獵殺順利。第 77 特遣隊司令部發。
+		<LineBreak/>
+		<LineBreak/>
+		機密
+		<LineBreak/>
+		DECL OADR BT
+		</TextBlock>
+
+</Grid>
